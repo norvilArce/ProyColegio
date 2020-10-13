@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlumnoADO.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="ConexionADO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -1,0 +1,9 @@
+D:\ISIL\DESARROLLO DE SOFTWARE\3er ciclo\Desarrollo de Aplicaciones I\proyecto\repo\ProyColegio\ProyColegio_ADO\obj\Debug\ProyColegio_ADO.csprojAssemblyReference.cache
+D:\ISIL\DESARROLLO DE SOFTWARE\3er ciclo\Desarrollo de Aplicaciones I\proyecto\repo\ProyColegio\ProyColegio_ADO\obj\Debug\ProyColegio_ADO.csproj.CoreCompileInputs.cache
+D:\ISIL\DESARROLLO DE SOFTWARE\3er ciclo\Desarrollo de Aplicaciones I\proyecto\repo\ProyColegio\ProyColegio_ADO\bin\Debug\ProyColegio_ADO.dll
+D:\ISIL\DESARROLLO DE SOFTWARE\3er ciclo\Desarrollo de Aplicaciones I\proyecto\repo\ProyColegio\ProyColegio_ADO\bin\Debug\ProyColegio_ADO.pdb
+D:\ISIL\DESARROLLO DE SOFTWARE\3er ciclo\Desarrollo de Aplicaciones I\proyecto\repo\ProyColegio\ProyColegio_ADO\bin\Debug\ProyColegio_BE.dll
+D:\ISIL\DESARROLLO DE SOFTWARE\3er ciclo\Desarrollo de Aplicaciones I\proyecto\repo\ProyColegio\ProyColegio_ADO\bin\Debug\ProyColegio_BE.pdb
+D:\ISIL\DESARROLLO DE SOFTWARE\3er ciclo\Desarrollo de Aplicaciones I\proyecto\repo\ProyColegio\ProyColegio_ADO\obj\Debug\ProyColegio_ADO.csproj.CopyComplete
+D:\ISIL\DESARROLLO DE SOFTWARE\3er ciclo\Desarrollo de Aplicaciones I\proyecto\repo\ProyColegio\ProyColegio_ADO\obj\Debug\ProyColegio_ADO.dll
+D:\ISIL\DESARROLLO DE SOFTWARE\3er ciclo\Desarrollo de Aplicaciones I\proyecto\repo\ProyColegio\ProyColegio_ADO\obj\Debug\ProyColegio_ADO.pdb
