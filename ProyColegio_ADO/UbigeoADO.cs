@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace ProyVentas_ADO
+namespace ProyColegio_ADO
 {
     public class UbigeoADO
     {

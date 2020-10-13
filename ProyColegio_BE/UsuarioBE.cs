@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProyVentas_BE
+namespace ProyColegio_BE
 {
     public class UsuarioBE
     {

@@ -3,13 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-//agragar usion
 using System.Data;
 using System.Data.SqlClient;
-using ProyVentas_ADO;
-using ProyVentas_BE;
+using ProyColegio_BE;
 
-namespace ProyVentas_ADO
+namespace ProyColegio_ADO
 {
     public class UsuarioADO
     {

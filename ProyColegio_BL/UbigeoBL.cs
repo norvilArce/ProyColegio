@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-// Agregamos los using...
-using ProyVentas_ADO;
-using ProyVentas_BE;
 using System.Data;
-namespace ProyVentas_BL
+using ProyColegio_ADO;
+
+namespace ProyColegio_BL
 {
     public class UbigeoBL
     {

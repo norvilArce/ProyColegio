@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-//using
-using ProyVentas_ADO;
-using ProyVentas_BE;
+using ProyColegio_ADO;
+using ProyColegio_BE;
 
-namespace ProyVentas_BL
+namespace ProyColegio_BL
 {
     public class UsuarioBL
     {

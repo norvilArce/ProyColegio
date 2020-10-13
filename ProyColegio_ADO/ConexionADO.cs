@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Configuration;
 
-namespace ProyVentas_ADO
+namespace ProyColegio_ADO
 {
     class ConexionADO
     {

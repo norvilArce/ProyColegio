@@ -6,7 +6,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ProyColegio_BE;
-using ProyVentas_ADO;
 
 namespace ProyColegio_ADO
 {
