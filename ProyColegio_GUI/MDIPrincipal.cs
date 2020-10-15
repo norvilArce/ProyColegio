@@ -46,7 +46,9 @@ namespace ProyColegio_GUI
 
         private void cursosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //lanzar form cursos
+            CursoMan01 cursoMan01 = new CursoMan01();
+            cursoMan01.MdiParent = this;
+            cursoMan01.Show();
         }
     }
 }

@@ -19,3 +19,6 @@ D:\ISIL\DESARROLLO DE SOFTWARE\3er ciclo\Desarrollo de Aplicaciones I\proyecto\r
 D:\ISIL\DESARROLLO DE SOFTWARE\3er ciclo\Desarrollo de Aplicaciones I\proyecto\repo\ProyColegio\ProyColegio_GUI\obj\Debug\ProyColegio_GUI.AlumnoMan01.resources
 D:\ISIL\DESARROLLO DE SOFTWARE\3er ciclo\Desarrollo de Aplicaciones I\proyecto\repo\ProyColegio\ProyColegio_GUI\obj\Debug\ProyColegio_GUI.AlumnoMan02.resources
 D:\ISIL\DESARROLLO DE SOFTWARE\3er ciclo\Desarrollo de Aplicaciones I\proyecto\repo\ProyColegio\ProyColegio_GUI\obj\Debug\ProyColegio_GUI.AlumnoMan03.resources
+D:\ISIL\DESARROLLO DE SOFTWARE\3er ciclo\Desarrollo de Aplicaciones I\proyecto\repo\ProyColegio\ProyColegio_GUI\obj\Debug\ProyColegio_GUI.CursoMan01.resources
+D:\ISIL\DESARROLLO DE SOFTWARE\3er ciclo\Desarrollo de Aplicaciones I\proyecto\repo\ProyColegio\ProyColegio_GUI\obj\Debug\ProyColegio_GUI.CursoMan02.resources
+D:\ISIL\DESARROLLO DE SOFTWARE\3er ciclo\Desarrollo de Aplicaciones I\proyecto\repo\ProyColegio\ProyColegio_GUI\obj\Debug\ProyColegio_GUI.CursoMan03.resources

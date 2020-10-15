@@ -68,6 +68,24 @@
       <DependentUpon>AlumnoMan03.cs</DependentUpon>
     </Compile>
     <Compile Include="clsCredenciales.cs" />
+    <Compile Include="CursoMan01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CursoMan01.designer.cs">
+      <DependentUpon>CursoMan01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CursoMan02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CursoMan02.designer.cs">
+      <DependentUpon>CursoMan02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CursoMan03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CursoMan03.designer.cs">
+      <DependentUpon>CursoMan03.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,6 +108,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AlumnoMan03.resx">
       <DependentUpon>AlumnoMan03.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CursoMan01.resx">
+      <DependentUpon>CursoMan01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CursoMan02.resx">
+      <DependentUpon>CursoMan02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CursoMan03.resx">
+      <DependentUpon>CursoMan03.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
