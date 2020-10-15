@@ -39,6 +39,14 @@ namespace ProyColegio_GUI
             }
         }
 
-        
+        private void profesoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //lanzar form profesores
+        }
+
+        private void cursosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //lanzar form cursos
+        }
     }
 }
