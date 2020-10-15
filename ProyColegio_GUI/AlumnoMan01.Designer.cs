@@ -124,7 +124,7 @@
             this.dtgAlumno.RowTemplate.Height = 24;
             this.dtgAlumno.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgAlumno.Size = new System.Drawing.Size(762, 379);
-            this.dtgAlumno.TabIndex = 13;
+            this.dtgAlumno.TabIndex = 0;
             // 
             // AlumnoMan01
             // 

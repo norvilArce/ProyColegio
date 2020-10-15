@@ -10,16 +10,18 @@ using System.Windows.Forms;
 
 namespace ProyColegio_GUI
 {
-    public partial class AlumnoMan02 : Form
+    public partial class AlumnoMan03 : Form
     {
-        public AlumnoMan02()
+        public AlumnoMan03()
         {
             InitializeComponent();
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private String _Id;
+        public String Id
         {
-
+            get { return _Id; }
+            set { _Id = value; }
         }
     }
 }

@@ -44,14 +44,26 @@ namespace ProyColegio_GUI
 
         private void btnInsertar_Click(object sender, EventArgs e)
         {
-            //llama a alumnoman02
-            AlumnoMan02 objAlumnoMan02 = new AlumnoMan02();
+            AlumnoMan02 alumnoMan02 = new AlumnoMan02();
+            alumnoMan02.ShowDialog();
 
+            txtFiltro.Text = "";
+            dtv = new DataView(objAlumnoBL.ListarAlumno());
+            CargarDatos("");
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
-            //llama a alumnoman03
+            AlumnoMan03 alumnoMan03 = new AlumnoMan03();
+
+            String strId = dtgAlumno.CurrentRow.Cells[0].Value.ToString();
+            //alumnoMan03.Id
+
+            alumnoMan03.ShowDialog();
+
+
+
+
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
