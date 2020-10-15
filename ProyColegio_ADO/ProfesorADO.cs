@@ -9,36 +9,35 @@ using ProyColegio_BE;
 
 namespace ProyColegio_ADO
 {
-    public class AlumnoADO
+    public class ProfesorADO
     {
         ConexionADO MiConexion = new ConexionADO();
         SqlConnection cnx = new SqlConnection();
         SqlCommand cmd = new SqlCommand();
         SqlDataReader dtr;
 
-        public Boolean InsertarAlumno(AlumnoBE objAlumnoBE)
+        public Boolean InsertarProfesor(ProfesorBE objProfesorBE)
         {
             cnx.ConnectionString = MiConexion.GetCnx();
             cmd.Connection = cnx;
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.CommandText = "usp_InsertarAlumno";
+            cmd.CommandText = "usp_InsertarProfesor";
 
             try
             {
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@vdni", objAlumnoBE.DniAlumno);
-                cmd.Parameters.AddWithValue("@vnom", objAlumnoBE.NomAlumno);
-                cmd.Parameters.AddWithValue("@vape_pat", objAlumnoBE.ApePatAlumno);
-                cmd.Parameters.AddWithValue("@vape_mat", objAlumnoBE.ApeMatAlumno);
-                cmd.Parameters.AddWithValue("@vemail", objAlumnoBE.EmailAlumno);
-                cmd.Parameters.AddWithValue("@vfec_nac", objAlumnoBE.FecNacAlumno);
-                cmd.Parameters.AddWithValue("@vtel", objAlumnoBE.TelAlumno);
-                cmd.Parameters.AddWithValue("@vid_padre", objAlumnoBE.IdPadre);
-                cmd.Parameters.AddWithValue("@vdir", objAlumnoBE.DirAlumno);
-                cmd.Parameters.AddWithValue("@vid_ubigeo", objAlumnoBE.Id_Ubigeo);
-                cmd.Parameters.AddWithValue("@vUsu_registro", objAlumnoBE.Usu_Registro);
-                cmd.Parameters.AddWithValue("@vEst_Alum", objAlumnoBE.Est_Alum);
-                cmd.Parameters.AddWithValue("@vid_per", objAlumnoBE.IdPeriodo);
+                cmd.Parameters.AddWithValue("@vdni", objProfesorBE.DniProfesor);
+                cmd.Parameters.AddWithValue("@vnom", objProfesorBE.NomProfesor);
+                cmd.Parameters.AddWithValue("@vape_pat", objProfesorBE.ApePatProfesor);
+                cmd.Parameters.AddWithValue("@vape_mat", objProfesorBE.ApeMatProfesor);
+                cmd.Parameters.AddWithValue("@vemail", objProfesorBE.EmailProfesor);
+                cmd.Parameters.AddWithValue("@vfec_nac", objProfesorBE.FecNacProfesor);
+                cmd.Parameters.AddWithValue("@vtel", objProfesorBE.TelProfesor);
+                cmd.Parameters.AddWithValue("@vtel", objProfesorBE.CelProfesor);
+                cmd.Parameters.AddWithValue("@vdir", objProfesorBE.DirProfesor);
+                cmd.Parameters.AddWithValue("@vid_ubigeo", objProfesorBE.Id_Ubigeo);
+                cmd.Parameters.AddWithValue("@vUsu_registro", objProfesorBE.Usu_Registro);
+                cmd.Parameters.AddWithValue("@vEst_Alum", objProfesorBE.Est_Prof);
 
                 //ejecutmos
                 cnx.Open();
@@ -60,30 +59,29 @@ namespace ProyColegio_ADO
         }
 
 
-        public Boolean ActualizarAlumno(AlumnoBE objAlumnoBE)
+        public Boolean ActualizarProfesor(ProfesorBE objProfesorBE)
         {
             cnx.ConnectionString = MiConexion.GetCnx();
             cmd.Connection = cnx;
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.CommandText = "usp_ActualizarAlumno";
+            cmd.CommandText = "usp_ActualizarProfesor";
 
             try
             {
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@vid_Alum", objAlumnoBE.IdAlumno);
-                cmd.Parameters.AddWithValue("@vdni", objAlumnoBE.DniAlumno);
-                cmd.Parameters.AddWithValue("@vnom", objAlumnoBE.NomAlumno);
-                cmd.Parameters.AddWithValue("@vape_pat", objAlumnoBE.ApePatAlumno);
-                cmd.Parameters.AddWithValue("@vape_mat", objAlumnoBE.ApeMatAlumno);
-                cmd.Parameters.AddWithValue("@vemail", objAlumnoBE.EmailAlumno);
-                cmd.Parameters.AddWithValue("@vfec_nac", objAlumnoBE.FecNacAlumno);
-                cmd.Parameters.AddWithValue("@vtel", objAlumnoBE.TelAlumno);
-                cmd.Parameters.AddWithValue("@vid_padre", objAlumnoBE.IdPadre);
-                cmd.Parameters.AddWithValue("@vdir", objAlumnoBE.DirAlumno);
-                cmd.Parameters.AddWithValue("@vid_ubigeo", objAlumnoBE.Id_Ubigeo);
-                cmd.Parameters.AddWithValue("@vUsu_ult_mod", objAlumnoBE.Usu_Ult_Mod);
-                cmd.Parameters.AddWithValue("@vEst_Alum", objAlumnoBE.Est_Alum);
-                cmd.Parameters.AddWithValue("@vid_per", objAlumnoBE.IdPeriodo);
+                cmd.Parameters.AddWithValue("@vid_Alum", objProfesorBE.IdProfesor);
+                cmd.Parameters.AddWithValue("@vdni", objProfesorBE.DniProfesor);
+                cmd.Parameters.AddWithValue("@vnom", objProfesorBE.NomProfesor);
+                cmd.Parameters.AddWithValue("@vape_pat", objProfesorBE.ApePatProfesor);
+                cmd.Parameters.AddWithValue("@vape_mat", objProfesorBE.ApeMatProfesor);
+                cmd.Parameters.AddWithValue("@vemail", objProfesorBE.EmailProfesor);
+                cmd.Parameters.AddWithValue("@vfec_nac", objProfesorBE.FecNacProfesor);
+                cmd.Parameters.AddWithValue("@vtel", objProfesorBE.TelProfesor);
+                cmd.Parameters.AddWithValue("@vtel", objProfesorBE.CelProfesor);
+                cmd.Parameters.AddWithValue("@vdir", objProfesorBE.DirProfesor);
+                cmd.Parameters.AddWithValue("@vid_ubigeo", objProfesorBE.Id_Ubigeo);
+                cmd.Parameters.AddWithValue("@vUsu_ult_mod", objProfesorBE.Usu_Ult_Mod);
+                cmd.Parameters.AddWithValue("@vEst_Alum", objProfesorBE.Est_Prof);
 
                 //ejecuta
                 cnx.Open();
@@ -107,12 +105,12 @@ namespace ProyColegio_ADO
 
         }
 
-        public Boolean EliminarAlumno(String strId)
+        public Boolean EliminarProfesor(String strId)
         {
             cnx.ConnectionString = MiConexion.GetCnx();
             cmd.Connection = cnx;
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.CommandText = "usp_EliminarAlumno";
+            cmd.CommandText = "usp_EliminarProfesor";
 
             try
             {
@@ -141,9 +139,9 @@ namespace ProyColegio_ADO
 
         }
 
-        public AlumnoBE ConsultarAlumno(String strId)
+        public ProfesorBE ConsultarProfesor(String strId)
         {
-            AlumnoBE objAlumnoBE = new AlumnoBE();
+            ProfesorBE objProfesorBE = new ProfesorBE();
             cnx.ConnectionString = MiConexion.GetCnx();
             cmd.Connection = cnx;
             cmd.CommandType = CommandType.StoredProcedure;
@@ -158,27 +156,26 @@ namespace ProyColegio_ADO
                 if (dtr.HasRows)
                 {
                     dtr.Read();
-                    objAlumnoBE.IdAlumno = Convert.ToInt16(dtr["IDALUMNO"]);
-                    objAlumnoBE.DniAlumno = dtr["DNI"].ToString();
-                    objAlumnoBE.NomAlumno = dtr["NOMBRES"].ToString();
-                    objAlumnoBE.ApePatAlumno = dtr["APEPATERNO"].ToString();
-                    objAlumnoBE.ApeMatAlumno = dtr["APEMATERNO"].ToString();
-                    objAlumnoBE.EmailAlumno = dtr["EMAIL"].ToString();
-                    objAlumnoBE.FecNacAlumno = Convert.ToDateTime(dtr["FECHANACI"]);
-                    objAlumnoBE.TelAlumno = dtr["TELEFONO"].ToString();
-                    objAlumnoBE.IdPadre = Convert.ToInt16(dtr["IDPADRE"]);
-                    objAlumnoBE.DirAlumno = dtr["DIRECCION"].ToString();
-                    objAlumnoBE.Id_Ubigeo = dtr["IdUbigeo"].ToString();
-                    objAlumnoBE.Usu_Registro = dtr["USUARIO_REGISTRO"].ToString();
-                    objAlumnoBE.Fec_Registro = Convert.ToDateTime(dtr["FECHA_REGISTRO"]);
-                    objAlumnoBE.Usu_Ult_Mod = dtr["USUARIO_ULT_MODIFICACION"].ToString();
-                    objAlumnoBE.Fec_Ult_Mod = Convert.ToDateTime(dtr["FECHA_ULT_MODIFICACION"]);
-                    objAlumnoBE.Est_Alum = Convert.ToInt16(dtr["ESTADO"]);
-                    objAlumnoBE.IdPeriodo = Convert.ToInt16(dtr["IDPERIODO"]);
+                    objProfesorBE.IdProfesor = Convert.ToInt16(dtr["IDPROFESOR"]);
+                    objProfesorBE.DniProfesor = dtr["DNI"].ToString();
+                    objProfesorBE.NomProfesor = dtr["NOMBRES"].ToString();
+                    objProfesorBE.ApePatProfesor = dtr["APEPATERNO"].ToString();
+                    objProfesorBE.ApeMatProfesor = dtr["APEMATERNO"].ToString();
+                    objProfesorBE.EmailProfesor = dtr["EMAIL"].ToString();
+                    objProfesorBE.FecNacProfesor = Convert.ToDateTime(dtr["FECHANACI"]);
+                    objProfesorBE.TelProfesor = dtr["TELEFONO"].ToString();
+                    objProfesorBE.CelProfesor = dtr["CELULAR"].ToString();
+                    objProfesorBE.DirProfesor = dtr["DIRECCION"].ToString();
+                    objProfesorBE.Id_Ubigeo = dtr["IdUbigeo"].ToString();
+                    objProfesorBE.Usu_Registro = dtr["USUARIO_REGISTRO"].ToString();
+                    objProfesorBE.Fec_Registro = Convert.ToDateTime(dtr["FECHA_REGISTRO"]);
+                    objProfesorBE.Usu_Ult_Mod = dtr["USUARIO_ULT_MODIFICACION"].ToString();
+                    objProfesorBE.Fec_Ult_Mod = Convert.ToDateTime(dtr["FECHA_ULT_MODIFICACION"]);
+                    objProfesorBE.Est_Prof = Convert.ToInt16(dtr["ESTADO"]);
 
                 }
                 dtr.Close();
-                return objAlumnoBE;
+                return objProfesorBE;
             }
             catch (SqlException ex)
             {
@@ -195,34 +192,34 @@ namespace ProyColegio_ADO
 
         }
 
-        public DataTable ListarAlumno()
+        public DataTable ListarProfesor()
         {
             DataSet dts = new DataSet();
             cnx.ConnectionString = MiConexion.GetCnx();
             cmd.Connection = cnx;
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.CommandText = "usp_ListarAlumno";
+            cmd.CommandText = "usp_ListarProfesor";
             try
             {
                 cmd.Parameters.Clear();
                 SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
-                sqlDataAdapter.Fill(dts, "Alumnos");
+                sqlDataAdapter.Fill(dts, "Profesores");
 
-                return dts.Tables["Alumnos"];
+                return dts.Tables["Profesores"];
             }
             catch (SqlException ex)
             {
                 throw new Exception(ex.Message);
             }
-            return dts.Tables["Alumnos"];
+            return dts.Tables["Profesores"];
         }
 
-        public Int16 contarAlumnos()
+        public Int16 contarProfesores()
         {
             cnx.ConnectionString = MiConexion.GetCnx();
             cmd.Connection = cnx;
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.CommandText = "usp_ContarAlumnos";
+            cmd.CommandText = "usp_ContarProfesor";
 
             try
             {
