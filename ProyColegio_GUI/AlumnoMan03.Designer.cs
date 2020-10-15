@@ -29,14 +29,16 @@
         private void InitializeComponent()
         {
             this.grpDatos = new System.Windows.Forms.GroupBox();
+            this.lblId = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.dtpFecNac = new System.Windows.Forms.DateTimePicker();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textEmail = new System.Windows.Forms.TextBox();
-            this.textApeMat = new System.Windows.Forms.TextBox();
-            this.textApePat = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtApeMat = new System.Windows.Forms.TextBox();
+            this.txtApePat = new System.Windows.Forms.TextBox();
             this.chkEstado = new System.Windows.Forms.CheckBox();
             this.mskDni = new System.Windows.Forms.MaskedTextBox();
             this.cboPadre = new System.Windows.Forms.ComboBox();
@@ -59,8 +61,6 @@
             this.Label3 = new System.Windows.Forms.Label();
             this.Label4 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.lblId = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.grpDatos.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,9 +73,9 @@
             this.grpDatos.Controls.Add(this.label11);
             this.grpDatos.Controls.Add(this.label10);
             this.grpDatos.Controls.Add(this.label9);
-            this.grpDatos.Controls.Add(this.textEmail);
-            this.grpDatos.Controls.Add(this.textApeMat);
-            this.grpDatos.Controls.Add(this.textApePat);
+            this.grpDatos.Controls.Add(this.txtEmail);
+            this.grpDatos.Controls.Add(this.txtApeMat);
+            this.grpDatos.Controls.Add(this.txtApePat);
             this.grpDatos.Controls.Add(this.chkEstado);
             this.grpDatos.Controls.Add(this.mskDni);
             this.grpDatos.Controls.Add(this.cboPadre);
@@ -104,6 +104,22 @@
             this.grpDatos.TabIndex = 1;
             this.grpDatos.TabStop = false;
             this.grpDatos.Text = "Datos";
+            // 
+            // lblId
+            // 
+            this.lblId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblId.Location = new System.Drawing.Point(127, 26);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(64, 20);
+            this.lblId.TabIndex = 30;
+            // 
+            // label15
+            // 
+            this.label15.Location = new System.Drawing.Point(15, 28);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(64, 16);
+            this.label15.TabIndex = 31;
+            this.label15.Text = "Id:";
             // 
             // dtpFecNac
             // 
@@ -147,26 +163,26 @@
             this.label9.TabIndex = 18;
             this.label9.Text = "Apellido Paterno:";
             // 
-            // textEmail
+            // txtEmail
             // 
-            this.textEmail.Location = new System.Drawing.Point(128, 119);
-            this.textEmail.Name = "textEmail";
-            this.textEmail.Size = new System.Drawing.Size(212, 20);
-            this.textEmail.TabIndex = 3;
+            this.txtEmail.Location = new System.Drawing.Point(128, 119);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(212, 20);
+            this.txtEmail.TabIndex = 3;
             // 
-            // textApeMat
+            // txtApeMat
             // 
-            this.textApeMat.Location = new System.Drawing.Point(400, 89);
-            this.textApeMat.Name = "textApeMat";
-            this.textApeMat.Size = new System.Drawing.Size(139, 20);
-            this.textApeMat.TabIndex = 2;
+            this.txtApeMat.Location = new System.Drawing.Point(400, 89);
+            this.txtApeMat.Name = "txtApeMat";
+            this.txtApeMat.Size = new System.Drawing.Size(139, 20);
+            this.txtApeMat.TabIndex = 2;
             // 
-            // textApePat
+            // txtApePat
             // 
-            this.textApePat.Location = new System.Drawing.Point(128, 88);
-            this.textApePat.Name = "textApePat";
-            this.textApePat.Size = new System.Drawing.Size(138, 20);
-            this.textApePat.TabIndex = 1;
+            this.txtApePat.Location = new System.Drawing.Point(128, 88);
+            this.txtApePat.Name = "txtApePat";
+            this.txtApePat.Size = new System.Drawing.Size(138, 20);
+            this.txtApePat.TabIndex = 1;
             // 
             // chkEstado
             // 
@@ -238,6 +254,7 @@
             this.btnGrabar.Size = new System.Drawing.Size(72, 24);
             this.btnGrabar.TabIndex = 14;
             this.btnGrabar.Text = "Grabar";
+            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
             // 
             // Label1
             // 
@@ -347,22 +364,7 @@
             this.btnCancelar.Size = new System.Drawing.Size(72, 24);
             this.btnCancelar.TabIndex = 15;
             this.btnCancelar.Text = "Cancelar";
-            // 
-            // lblId
-            // 
-            this.lblId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblId.Location = new System.Drawing.Point(127, 26);
-            this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(64, 20);
-            this.lblId.TabIndex = 30;
-            // 
-            // label15
-            // 
-            this.label15.Location = new System.Drawing.Point(15, 28);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(64, 16);
-            this.label15.TabIndex = 31;
-            this.label15.Text = "Id:";
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // AlumnoMan03
             // 
@@ -377,6 +379,7 @@
             this.Name = "AlumnoMan03";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AlumnoMan03";
+            this.Load += new System.EventHandler(this.AlumnoMan03_Load);
             this.grpDatos.ResumeLayout(false);
             this.grpDatos.PerformLayout();
             this.ResumeLayout(false);
@@ -393,9 +396,9 @@
         internal System.Windows.Forms.Label label11;
         internal System.Windows.Forms.Label label10;
         internal System.Windows.Forms.Label label9;
-        internal System.Windows.Forms.TextBox textEmail;
-        internal System.Windows.Forms.TextBox textApeMat;
-        internal System.Windows.Forms.TextBox textApePat;
+        internal System.Windows.Forms.TextBox txtEmail;
+        internal System.Windows.Forms.TextBox txtApeMat;
+        internal System.Windows.Forms.TextBox txtApePat;
         private System.Windows.Forms.CheckBox chkEstado;
         private System.Windows.Forms.MaskedTextBox mskDni;
         private System.Windows.Forms.ComboBox cboPadre;
