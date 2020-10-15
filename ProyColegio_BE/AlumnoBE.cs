@@ -71,11 +71,11 @@ namespace ProyColegio_BE
             set { mvarid_padre = value; }
         }
 
-        private String mavrdir_alum;
+        private String mvardir_alum;
         public String DirAlumno
         {
-            get { return mvardni_alum; }
-            set { mvardni_alum = value; }
+            get { return mvardir_alum; }
+            set { mvardir_alum = value; }
         }
 
         private String mvarid_ubigeo;
