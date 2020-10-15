@@ -100,6 +100,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProfesorMan01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfesorMan01.designer.cs">
+      <DependentUpon>ProfesorMan01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfesorMan02.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfesorMan02.designer.cs">
+      <DependentUpon>ProfesorMan02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfesorMan03.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfesorMan03.designer.cs">
+      <DependentUpon>ProfesorMan03.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AlumnoMan01.resx">
       <DependentUpon>AlumnoMan01.cs</DependentUpon>
     </EmbeddedResource>
@@ -133,6 +151,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ProfesorMan01.resx">
+      <DependentUpon>ProfesorMan01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfesorMan02.resx">
+      <DependentUpon>ProfesorMan02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfesorMan03.resx">
+      <DependentUpon>ProfesorMan03.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -6,76 +6,76 @@ using System.Threading.Tasks;
 
 namespace ProyColegio_BE
 {
-    public class AlumnoBE
+    public class ProfesorBE
     {
-        private Int16 mvarid_alum;
-        public Int16 IdAlumno
+        private Int16 mvarid_prof;
+        public Int16 IdProfesor
         {
-            get { return mvarid_alum; }
-            set { mvarid_alum = value; }
+            get { return mvarid_prof; }
+            set { mvarid_prof = value; }
         }
 
-        private String mvardni_alum;
-        public String DniAlumno
+        private String mvardni_prof;
+        public String DniProfesor
         {
-            get { return mvardni_alum; }
-            set { mvardni_alum = value; }
+            get { return mvardni_prof; }
+            set { mvardni_prof = value; }
         }
 
-        private String mvarnom_alum;
-        public String NomAlumno
+        private String mvarnom_prof;
+        public String NomProfesor
         {
-            get { return mvarnom_alum; }
-            set { mvarnom_alum = value; }
+            get { return mvarnom_prof; }
+            set { mvarnom_prof = value; }
         }
 
-        private String mvarapepat_alum;
-        public String ApePatAlumno
+        private String mvarapepat_prof;
+        public String ApePatProfesor
         {
-            get { return mvarapepat_alum; }
-            set { mvarapepat_alum = value; }
+            get { return mvarapepat_prof; }
+            set { mvarapepat_prof = value; }
         }
 
-        private String mvarapemat_alum;
-        public String ApeMatAlumno
+        private String mvarapemat_prof;
+        public String ApeMatProfesor
         {
-            get { return mvarapemat_alum; }
-            set { mvarapemat_alum = value; }
+            get { return mvarapemat_prof; }
+            set { mvarapemat_prof = value; }
         }
 
-        private String mvaremail_alum;
-        public String EmailAlumno
+        private String mvaremail_prof;
+        public String EmailProfesor
         {
-            get { return mvaremail_alum; }
-            set { mvaremail_alum = value; }
+            get { return mvaremail_prof; }
+            set { mvaremail_prof = value; }
         }
 
-        private DateTime mvarfecnac_alum;
-        public DateTime FecNacAlumno
+        private DateTime mvarfecnac_prof;
+        public DateTime FecNacProfesor
         {
-            get { return mvarfecnac_alum; }
-            set { mvarfecnac_alum = value; }
+            get { return mvarfecnac_prof; }
+            set { mvarfecnac_prof = value; }
         }
 
-        private String mvartel_alum;
-        public String TelAlumno
+        private String mvartel_prof;
+        public String TelProfesor
         {
-            get { return mvartel_alum; }
-            set { mvartel_alum = value; }
+            get { return mvartel_prof; }
+            set { mvartel_prof = value; }
         }
 
-        private Int16 mvarid_padre;
-        public Int16 IdPadre
+        private String mvarcel_prof;
+        public String CelProfesor
         {
-            get { return mvarid_padre; }
-            set { mvarid_padre = value; }
+            get { return mvarcel_prof; }
+            set { mvarcel_prof = value; }
         }
 
-        private String mavrdir_alum;
-        public String DirAlumno
+        private String mavrdir_prof;
+        public String DirProfesor
         {
-            get { return mvardni_alum; }
-            set { mvardni_alum = value; }
+            get { return mavrdir_prof; }
+            set { mavrdir_prof = value; }
         }
 
         private String mvarid_ubigeo;
@@ -113,18 +113,11 @@ namespace ProyColegio_BE
             set { mvarfec_ult_mod = value; }
         }
 
-        private Int16 mvarest_alum;
-        public Int16 Est_Alum
+        private Int16 mvarest_prof;
+        public Int16 Est_Prof
         {
-            get { return mvarest_alum; }
-            set { mvarest_alum = value; }
-        }
-
-        private Int16 mvarid_periodo;
-        public Int16 IdPeriodo
-        {
-            get { return mvarid_periodo; }
-            set { mvarid_periodo = value; }
+            get { return mvarest_prof; }
+            set { mvarest_prof = value; }
         }
 
     }

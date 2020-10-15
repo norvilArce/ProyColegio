@@ -23,7 +23,6 @@ namespace ProyColegio_GUI
             alumnoMan01.MdiParent = this;
             alumnoMan01.Show();
         }
-
         private void MDIPrincipal_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
@@ -41,7 +40,9 @@ namespace ProyColegio_GUI
 
         private void profesoresToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //lanzar form profesores
+            ProfesorMan01 profesorMan01 = new ProfesorMan01();
+            profesorMan01.MdiParent = this;
+            profesorMan01.Show();
         }
 
         private void cursosToolStripMenuItem_Click(object sender, EventArgs e)

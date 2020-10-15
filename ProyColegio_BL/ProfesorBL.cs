@@ -9,38 +9,38 @@ using ProyColegio_BE;
 
 namespace ProyColegio_BL
 {
-    public class AlumnoBL
+    public class ProfesorBL
     {
-        AlumnoADO objAlumnoADO = new AlumnoADO();
+        ProfesorADO objProfesorADO = new ProfesorADO();
 
-        public Boolean InsertarAlumno(AlumnoBE objAlumnoBE)
+        public Boolean InsertarProfesor(ProfesorBE objProfesorBE)
         {
-            return objAlumnoADO.InsertarAlumno(objAlumnoBE);
+            return objProfesorADO.InsertarProfesor(objProfesorBE);
         }
 
-        public Boolean ActualizarAlumno(AlumnoBE objAlumnoBE)
+        public Boolean ActualizarProfesor(ProfesorBE objProfesorBE)
         {
-            return objAlumnoADO.ActualizarAlumno(objAlumnoBE);
+            return objProfesorADO.ActualizarProfesor(objProfesorBE);
         }
 
-        public Boolean EliminarAlumno(String strId)
+        public Boolean EliminarProfesor(String strId)
         {
-            return objAlumnoADO.EliminarAlumno(strId);
+            return objProfesorADO.EliminarProfesor(strId);
         }
 
-        public AlumnoBE ConsultarAlumno(String strId)
+        public ProfesorBE ConsultarProfesor(String strId)
         {
-            return objAlumnoADO.ConsultarAlumno(strId);
+            return objProfesorADO.ConsultarProfesor(strId);
         }
 
-        public DataTable ListarAlumno()
+        public DataTable ListarProfesor()
         {
-            return objAlumnoADO.ListarAlumno();
+            return objProfesorADO.ListarProfesor();
         }
 
-        public Int16 contarAlumnos()
+        public Int16 contarProfesores()
         {
-            return objAlumnoADO.contarAlumnos();
+            return objProfesorADO.contarProfesores();
         }
 
     }

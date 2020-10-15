@@ -1,6 +1,6 @@
 ﻿namespace ProyColegio_GUI
 {
-    partial class AlumnoMan03
+    partial class ProfesorMan03
     {
         /// <summary>
         /// Required designer variable.
@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.grpDatos = new System.Windows.Forms.GroupBox();
+            this.txtCel = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.lblId = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.dtpFecNac = new System.Windows.Forms.DateTimePicker();
@@ -41,23 +43,19 @@
             this.txtApePat = new System.Windows.Forms.TextBox();
             this.chkEstado = new System.Windows.Forms.CheckBox();
             this.mskDni = new System.Windows.Forms.MaskedTextBox();
-            this.cboPadre = new System.Windows.Forms.ComboBox();
             this.cboDepartamento = new System.Windows.Forms.ComboBox();
             this.cboProvincia = new System.Windows.Forms.ComboBox();
-            this.cboPeriodo = new System.Windows.Forms.ComboBox();
             this.cboDistrito = new System.Windows.Forms.ComboBox();
             this.btnGrabar = new System.Windows.Forms.Button();
             this.Label1 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtDir = new System.Windows.Forms.TextBox();
             this.txtTel = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
             this.Label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.Label3 = new System.Windows.Forms.Label();
             this.Label4 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -66,6 +64,8 @@
             // 
             // grpDatos
             // 
+            this.grpDatos.Controls.Add(this.txtCel);
+            this.grpDatos.Controls.Add(this.label13);
             this.grpDatos.Controls.Add(this.lblId);
             this.grpDatos.Controls.Add(this.label15);
             this.grpDatos.Controls.Add(this.dtpFecNac);
@@ -78,32 +78,43 @@
             this.grpDatos.Controls.Add(this.txtApePat);
             this.grpDatos.Controls.Add(this.chkEstado);
             this.grpDatos.Controls.Add(this.mskDni);
-            this.grpDatos.Controls.Add(this.cboPadre);
             this.grpDatos.Controls.Add(this.cboDepartamento);
             this.grpDatos.Controls.Add(this.cboProvincia);
-            this.grpDatos.Controls.Add(this.cboPeriodo);
             this.grpDatos.Controls.Add(this.cboDistrito);
             this.grpDatos.Controls.Add(this.btnGrabar);
             this.grpDatos.Controls.Add(this.Label1);
             this.grpDatos.Controls.Add(this.txtNombre);
             this.grpDatos.Controls.Add(this.txtDir);
             this.grpDatos.Controls.Add(this.txtTel);
-            this.grpDatos.Controls.Add(this.label13);
             this.grpDatos.Controls.Add(this.Label2);
             this.grpDatos.Controls.Add(this.label6);
             this.grpDatos.Controls.Add(this.label8);
             this.grpDatos.Controls.Add(this.label7);
             this.grpDatos.Controls.Add(this.label5);
-            this.grpDatos.Controls.Add(this.label14);
             this.grpDatos.Controls.Add(this.Label3);
             this.grpDatos.Controls.Add(this.Label4);
             this.grpDatos.Controls.Add(this.btnCancelar);
-            this.grpDatos.Location = new System.Drawing.Point(23, 22);
+            this.grpDatos.Location = new System.Drawing.Point(7, 12);
             this.grpDatos.Name = "grpDatos";
-            this.grpDatos.Size = new System.Drawing.Size(547, 476);
-            this.grpDatos.TabIndex = 1;
+            this.grpDatos.Size = new System.Drawing.Size(603, 484);
+            this.grpDatos.TabIndex = 2;
             this.grpDatos.TabStop = false;
             this.grpDatos.Text = "Datos";
+            // 
+            // txtCel
+            // 
+            this.txtCel.Location = new System.Drawing.Point(127, 210);
+            this.txtCel.Name = "txtCel";
+            this.txtCel.Size = new System.Drawing.Size(83, 20);
+            this.txtCel.TabIndex = 33;
+            // 
+            // label13
+            // 
+            this.label13.Location = new System.Drawing.Point(17, 210);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(64, 16);
+            this.label13.TabIndex = 32;
+            this.label13.Text = "Celular:";
             // 
             // lblId
             // 
@@ -202,15 +213,6 @@
             this.mskDni.Size = new System.Drawing.Size(100, 20);
             this.mskDni.TabIndex = 6;
             // 
-            // cboPadre
-            // 
-            this.cboPadre.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboPadre.FormattingEnabled = true;
-            this.cboPadre.Location = new System.Drawing.Point(128, 209);
-            this.cboPadre.Name = "cboPadre";
-            this.cboPadre.Size = new System.Drawing.Size(280, 21);
-            this.cboPadre.TabIndex = 7;
-            // 
             // cboDepartamento
             // 
             this.cboDepartamento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -229,15 +231,6 @@
             this.cboProvincia.Size = new System.Drawing.Size(280, 21);
             this.cboProvincia.TabIndex = 10;
             // 
-            // cboPeriodo
-            // 
-            this.cboPeriodo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboPeriodo.FormattingEnabled = true;
-            this.cboPeriodo.Location = new System.Drawing.Point(128, 363);
-            this.cboPeriodo.Name = "cboPeriodo";
-            this.cboPeriodo.Size = new System.Drawing.Size(280, 21);
-            this.cboPeriodo.TabIndex = 12;
-            // 
             // cboDistrito
             // 
             this.cboDistrito.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -254,7 +247,6 @@
             this.btnGrabar.Size = new System.Drawing.Size(72, 24);
             this.btnGrabar.TabIndex = 14;
             this.btnGrabar.Text = "Grabar";
-            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
             // 
             // Label1
             // 
@@ -284,14 +276,6 @@
             this.txtTel.Name = "txtTel";
             this.txtTel.Size = new System.Drawing.Size(83, 20);
             this.txtTel.TabIndex = 5;
-            // 
-            // label13
-            // 
-            this.label13.Location = new System.Drawing.Point(16, 210);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(80, 18);
-            this.label13.TabIndex = 22;
-            this.label13.Text = "Padre:";
             // 
             // Label2
             // 
@@ -333,14 +317,6 @@
             this.label5.TabIndex = 25;
             this.label5.Text = "Provincia:";
             // 
-            // label14
-            // 
-            this.label14.Location = new System.Drawing.Point(15, 365);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(64, 16);
-            this.label14.TabIndex = 27;
-            this.label14.Text = "Periodo:";
-            // 
             // Label3
             // 
             this.Label3.Location = new System.Drawing.Point(16, 181);
@@ -364,25 +340,21 @@
             this.btnCancelar.Size = new System.Drawing.Size(72, 24);
             this.btnCancelar.TabIndex = 15;
             this.btnCancelar.Text = "Cancelar";
-<<<<<<< HEAD
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-=======
->>>>>>> 79582d6ce0db204272e6df52927e99d6e747a47a
             // 
-            // AlumnoMan03
+            // ProfesorMan03
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Info;
-            this.ClientSize = new System.Drawing.Size(592, 520);
+            this.ClientSize = new System.Drawing.Size(622, 532);
             this.Controls.Add(this.grpDatos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "AlumnoMan03";
+            this.Name = "ProfesorMan03";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AlumnoMan03";
-            this.Load += new System.EventHandler(this.AlumnoMan03_Load);
+            this.Text = "Actualizar Profesor";
+            this.Load += new System.EventHandler(this.ProfesorMan03_Load);
             this.grpDatos.ResumeLayout(false);
             this.grpDatos.PerformLayout();
             this.ResumeLayout(false);
@@ -404,25 +376,23 @@
         internal System.Windows.Forms.TextBox txtApePat;
         private System.Windows.Forms.CheckBox chkEstado;
         private System.Windows.Forms.MaskedTextBox mskDni;
-        private System.Windows.Forms.ComboBox cboPadre;
         private System.Windows.Forms.ComboBox cboDepartamento;
         private System.Windows.Forms.ComboBox cboProvincia;
-        private System.Windows.Forms.ComboBox cboPeriodo;
         private System.Windows.Forms.ComboBox cboDistrito;
         internal System.Windows.Forms.Button btnGrabar;
         internal System.Windows.Forms.Label Label1;
         internal System.Windows.Forms.TextBox txtNombre;
         internal System.Windows.Forms.TextBox txtDir;
         internal System.Windows.Forms.TextBox txtTel;
-        internal System.Windows.Forms.Label label13;
         internal System.Windows.Forms.Label Label2;
         internal System.Windows.Forms.Label label6;
         internal System.Windows.Forms.Label label8;
         internal System.Windows.Forms.Label label7;
         internal System.Windows.Forms.Label label5;
-        internal System.Windows.Forms.Label label14;
         internal System.Windows.Forms.Label Label3;
         internal System.Windows.Forms.Label Label4;
         internal System.Windows.Forms.Button btnCancelar;
+        internal System.Windows.Forms.TextBox txtCel;
+        internal System.Windows.Forms.Label label13;
     }
 }
