@@ -10,11 +10,11 @@ namespace ProyColegio_BL
 {
     public class UsuarioBL
     {
-        UsuarioADO objUsuarioAdo = new UsuarioADO();
+        UsuarioADO objUsuarioADO = new UsuarioADO();
 
         public UsuarioBE ConsultarUsuario(String strLogin)
         {
-            return objUsuarioAdo.ConsultarUsuario(strLogin);
+            return objUsuarioADO.ConsultarUsuario(strLogin);
         }
 
     }

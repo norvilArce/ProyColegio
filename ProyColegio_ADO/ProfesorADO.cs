@@ -47,7 +47,7 @@ namespace ProyColegio_ADO
             catch (SqlException x)
             {
                 throw new Exception(x.Message);
-                return false;
+
             }
             finally
             {
@@ -91,7 +91,7 @@ namespace ProyColegio_ADO
             catch (SqlException x)
             {
                 throw new Exception(x.Message);
-                return false;
+
             }
             finally
             {
@@ -125,7 +125,7 @@ namespace ProyColegio_ADO
             catch (SqlException x)
             {
                 throw new Exception(x.Message);
-                return false;
+
             }
             finally
             {
@@ -211,7 +211,6 @@ namespace ProyColegio_ADO
             {
                 throw new Exception(ex.Message);
             }
-            return dts.Tables["Profesores"];
         }
 
         public Int16 contarProfesores()

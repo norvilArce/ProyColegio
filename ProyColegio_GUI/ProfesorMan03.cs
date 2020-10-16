@@ -31,23 +31,7 @@ namespace ProyColegio_GUI
 
         {
             try
-            {
-                UbigeoBL objUbigeoBL = new UbigeoBL();
-                cboDepartamento.DataSource = objUbigeoBL.Ubigeo_Departamentos();
-                cboDepartamento.ValueMember = "IdDepa";
-                cboDepartamento.DisplayMember = "Departamento";
-                cboDepartamento.SelectedValue = IdDepa;
-
-                cboProvincia.DataSource = objUbigeoBL.Ubigeo_ProvinciasDepartamento(IdDepa);
-                cboProvincia.ValueMember = "IdProv";
-                cboProvincia.DisplayMember = "Provincia";
-                cboProvincia.SelectedValue = IdProv;
-
-                cboDistrito.DataSource = objUbigeoBL.Ubigeo_DistritosProvinciaDepartamento(IdDepa, IdProv);
-                cboDistrito.ValueMember = "IdDist";
-                cboDistrito.DisplayMember = "Distrito";
-                cboDistrito.SelectedValue = IdDist;
-
+            {                
                 objProfesorBE = objProfesorBL.ConsultarProfesor(this.Id);
 
                 lblId.Text = objProfesorBE.IdProfesor.ToString();
@@ -59,6 +43,13 @@ namespace ProyColegio_GUI
                 txtCel.Text = objProfesorBE.CelProfesor;
                 txtDir.Text = objProfesorBE.DirProfesor;
                 chkEstado.Checked = Convert.ToBoolean(objProfesorBE.Est_Prof);
+
+                String idUbigeo = objProfesorBE.Id_Ubigeo;
+                CargarUbigeo(idUbigeo.Substring(0, 2), idUbigeo.Substring(2, 2), idUbigeo.Substring(4, 2));
+                Int16 IDCURSO = objProfesorBE.IdProfesor;
+                CargarCurso(IDCURSO);
+
+                //AGREGALE VALIDACIONES
             }
             catch (Exception ex)
             {
@@ -115,6 +106,33 @@ namespace ProyColegio_GUI
 
             }
 
+        }
+
+        private void CargarUbigeo(String IdDepa, String IdProv, String IdDist)
+        {
+            UbigeoBL objUbigeoBL = new UbigeoBL();
+            cboDepartamento.DataSource = objUbigeoBL.Ubigeo_Departamentos();
+            cboDepartamento.ValueMember = "IdDepa";
+            cboDepartamento.DisplayMember = "Departamento";
+            cboDepartamento.SelectedValue = IdDepa;
+
+            cboProvincia.DataSource = objUbigeoBL.Ubigeo_ProvinciasDepartamento(IdDepa);
+            cboProvincia.ValueMember = "IdProv";
+            cboProvincia.DisplayMember = "Provincia";
+            cboProvincia.SelectedValue = IdProv;
+
+            cboDistrito.DataSource = objUbigeoBL.Ubigeo_DistritosProvinciaDepartamento(IdDepa, IdProv);
+            cboDistrito.ValueMember = "IdDist";
+            cboDistrito.DisplayMember = "Distrito";
+            cboDistrito.SelectedValue = IdDist;
+        }
+        private void CargarCurso(Int16 NOMBRECURSO)
+        {
+            CursoBL objCursoBL = new CursoBL();
+            cboCursos.DataSource = objCursoBL.ListarCurso();
+            cboCursos.ValueMember = "IDCURSO";
+            cboCursos.DisplayMember = "NOMBRECURSO";
+            cboCursos.SelectedValue = NOMBRECURSO;
         }
     }
 }

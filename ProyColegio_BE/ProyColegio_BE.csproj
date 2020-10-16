@@ -44,6 +44,7 @@
     <Compile Include="ProfesorBE.cs" />
     <Compile Include="AlumnoBE.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="CursoBE.cs" />
     <Compile Include="PadreBE.cs" />
     <Compile Include="PeriodoBE.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

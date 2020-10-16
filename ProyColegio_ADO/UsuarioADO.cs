@@ -45,7 +45,7 @@ namespace ProyColegio_ADO
                 return objUsuarioBE;
 
             }
-            catch (Exception ex)
+            catch (SqlException ex)
             {
                 throw new Exception(ex.Message);
             }
