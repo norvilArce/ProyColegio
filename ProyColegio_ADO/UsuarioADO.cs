@@ -34,7 +34,7 @@ namespace ProyColegio_ADO
                 if (dtr.HasRows)
                 {
                     dtr.Read();
-                    objUsuarioBE.LogUsu = dtr["LogUsu"].ToString();
+                    objUsuarioBE.LogUsu = dtr["LoginUsu"].ToString();
                     objUsuarioBE.PassUsu = dtr["PassUsu"].ToString();
                     objUsuarioBE.NivUsu = Convert.ToInt16(dtr["NivUsu"]);
                     objUsuarioBE.FecReg = Convert.ToDateTime(dtr["FecReg"]);
@@ -45,7 +45,7 @@ namespace ProyColegio_ADO
                 return objUsuarioBE;
 
             }
-            catch (SqlException ex)
+            catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }

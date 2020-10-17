@@ -25,7 +25,7 @@ namespace ProyColegio_GUI
         public void CargarDatos(String strFiltro)
         {
             //dtgVendedor.AutoGenerateColumns = false;
-            dtv.RowFilter = "ape_ven like '%" + strFiltro + "%'";
+            dtv.RowFilter = "APELLNOMBRES like '%" + strFiltro + "%'";
             dtgProfesor.DataSource = dtv;
             lblRegistros.Text = dtgProfesor.Rows.Count.ToString();
         }
@@ -34,8 +34,7 @@ namespace ProyColegio_GUI
         {
             try
             {
-                dtgProfesor.AutoGenerateColumns = false;
-                // Creamos la vista en memoria y cargamos los datos
+                //dtgProfesor.AutoGenerateColumns = false;
                 dtv = new DataView(objProfesorBL.ListarProfesor());
                 CargarDatos("");
             }
@@ -64,7 +63,7 @@ namespace ProyColegio_GUI
 
                 String strId = dtgProfesor.CurrentRow.Cells[0].Value.ToString();
                 profesorMan03.Id = strId;
-
+                profesorMan03.ShowDialog();
                 txtFiltro.Text = "";
                 dtv = new DataView(objProfesorBL.ListarProfesor());
                 CargarDatos("");

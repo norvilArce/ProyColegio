@@ -41,7 +41,7 @@ namespace ProyColegio_GUI
                     ValidaAccesos(intentos);
                 }
                 // Si el login existe, validamos el password....
-                if (txtLogin.Text == objUsuarioBE .LogUsu & txtPassword.Text == objUsuarioBE.PassUsu )
+                if (txtLogin.Text == objUsuarioBE.LogUsu & txtPassword.Text == objUsuarioBE.PassUsu )
                 {
                     // Si las credenciales son correctas se  registran las mismas en la clase estatica clsCredenciales
                     // y se lanza el MDI Principal

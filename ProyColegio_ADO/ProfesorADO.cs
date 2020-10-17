@@ -33,11 +33,12 @@ namespace ProyColegio_ADO
                 cmd.Parameters.AddWithValue("@vemail", objProfesorBE.EmailProfesor);
                 cmd.Parameters.AddWithValue("@vfec_nac", objProfesorBE.FecNacProfesor);
                 cmd.Parameters.AddWithValue("@vtel", objProfesorBE.TelProfesor);
-                cmd.Parameters.AddWithValue("@vtel", objProfesorBE.CelProfesor);
+                cmd.Parameters.AddWithValue("@vcel", objProfesorBE.CelProfesor);
                 cmd.Parameters.AddWithValue("@vdir", objProfesorBE.DirProfesor);
                 cmd.Parameters.AddWithValue("@vid_ubigeo", objProfesorBE.Id_Ubigeo);
                 cmd.Parameters.AddWithValue("@vUsu_registro", objProfesorBE.Usu_Registro);
-                cmd.Parameters.AddWithValue("@vEst_Alum", objProfesorBE.Est_Prof);
+                cmd.Parameters.AddWithValue("@vEst_Prof", objProfesorBE.Est_Prof);
+                cmd.Parameters.AddWithValue("@vid_Curso", objProfesorBE.idCurso);
 
                 //ejecutmos
                 cnx.Open();
@@ -69,7 +70,7 @@ namespace ProyColegio_ADO
             try
             {
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@vid_Alum", objProfesorBE.IdProfesor);
+                cmd.Parameters.AddWithValue("@vid_Prof", objProfesorBE.IdProfesor);
                 cmd.Parameters.AddWithValue("@vdni", objProfesorBE.DniProfesor);
                 cmd.Parameters.AddWithValue("@vnom", objProfesorBE.NomProfesor);
                 cmd.Parameters.AddWithValue("@vape_pat", objProfesorBE.ApePatProfesor);
@@ -77,11 +78,12 @@ namespace ProyColegio_ADO
                 cmd.Parameters.AddWithValue("@vemail", objProfesorBE.EmailProfesor);
                 cmd.Parameters.AddWithValue("@vfec_nac", objProfesorBE.FecNacProfesor);
                 cmd.Parameters.AddWithValue("@vtel", objProfesorBE.TelProfesor);
-                cmd.Parameters.AddWithValue("@vtel", objProfesorBE.CelProfesor);
+                cmd.Parameters.AddWithValue("@vcel", objProfesorBE.CelProfesor);
                 cmd.Parameters.AddWithValue("@vdir", objProfesorBE.DirProfesor);
                 cmd.Parameters.AddWithValue("@vid_ubigeo", objProfesorBE.Id_Ubigeo);
                 cmd.Parameters.AddWithValue("@vUsu_ult_mod", objProfesorBE.Usu_Ult_Mod);
-                cmd.Parameters.AddWithValue("@vEst_Alum", objProfesorBE.Est_Prof);
+                cmd.Parameters.AddWithValue("@vEst_Prof", objProfesorBE.Est_Prof);
+                cmd.Parameters.AddWithValue("@vid_Curso", objProfesorBE.idCurso);
 
                 //ejecuta
                 cnx.Open();
@@ -115,7 +117,7 @@ namespace ProyColegio_ADO
             try
             {
                 cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@vcod", strId);
+                cmd.Parameters.AddWithValue("@vid", strId);
 
                 cnx.Open();
                 cmd.ExecuteNonQuery();
@@ -145,7 +147,7 @@ namespace ProyColegio_ADO
             cnx.ConnectionString = MiConexion.GetCnx();
             cmd.Connection = cnx;
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.CommandText = "usp_ConsultarAlumno";
+            cmd.CommandText = "usp_ConsultarProfesor";
             try
             {
                 cmd.Parameters.Clear();
@@ -172,6 +174,7 @@ namespace ProyColegio_ADO
                     objProfesorBE.Usu_Ult_Mod = dtr["USUARIO_ULT_MODIFICACION"].ToString();
                     objProfesorBE.Fec_Ult_Mod = Convert.ToDateTime(dtr["FECHA_ULT_MODIFICACION"]);
                     objProfesorBE.Est_Prof = Convert.ToInt16(dtr["ESTADO"]);
+                    objProfesorBE.idCurso = Convert.ToInt16(dtr["IDCURSO"]);
 
                 }
                 dtr.Close();

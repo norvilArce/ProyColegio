@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.grpDatos = new System.Windows.Forms.GroupBox();
+            this.cboCursos = new System.Windows.Forms.ComboBox();
+            this.label14 = new System.Windows.Forms.Label();
             this.txtCel = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.dtpFecNac = new System.Windows.Forms.DateTimePicker();
@@ -57,8 +59,6 @@
             this.Label3 = new System.Windows.Forms.Label();
             this.Label4 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.cboCursos = new System.Windows.Forms.ComboBox();
-            this.label14 = new System.Windows.Forms.Label();
             this.grpDatos.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -100,6 +100,23 @@
             this.grpDatos.TabIndex = 1;
             this.grpDatos.TabStop = false;
             this.grpDatos.Text = "Datos";
+            // 
+            // cboCursos
+            // 
+            this.cboCursos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCursos.FormattingEnabled = true;
+            this.cboCursos.Location = new System.Drawing.Point(121, 229);
+            this.cboCursos.Name = "cboCursos";
+            this.cboCursos.Size = new System.Drawing.Size(280, 21);
+            this.cboCursos.TabIndex = 37;
+            // 
+            // label14
+            // 
+            this.label14.Location = new System.Drawing.Point(8, 232);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(64, 16);
+            this.label14.TabIndex = 36;
+            this.label14.Text = "Curso:";
             // 
             // txtCel
             // 
@@ -231,6 +248,7 @@
             this.btnGrabar.Size = new System.Drawing.Size(72, 24);
             this.btnGrabar.TabIndex = 14;
             this.btnGrabar.Text = "Grabar";
+            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
             // 
             // Label1
             // 
@@ -324,23 +342,7 @@
             this.btnCancelar.Size = new System.Drawing.Size(72, 24);
             this.btnCancelar.TabIndex = 15;
             this.btnCancelar.Text = "Cancelar";
-            // 
-            // cboCursos
-            // 
-            this.cboCursos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboCursos.FormattingEnabled = true;
-            this.cboCursos.Location = new System.Drawing.Point(121, 229);
-            this.cboCursos.Name = "cboCursos";
-            this.cboCursos.Size = new System.Drawing.Size(280, 21);
-            this.cboCursos.TabIndex = 37;
-            // 
-            // label14
-            // 
-            this.label14.Location = new System.Drawing.Point(8, 232);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(64, 16);
-            this.label14.TabIndex = 36;
-            this.label14.Text = "Curso:";
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // ProfesorMan02
             // 

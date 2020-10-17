@@ -120,5 +120,12 @@ namespace ProyColegio_BE
             set { mvarest_prof = value; }
         }
 
+        private Int16 mvarid_curso;
+        public Int16 idCurso
+        {
+            get { return mvarid_curso; }
+            set { mvarid_curso = value; }
+        }
+
     }
 }

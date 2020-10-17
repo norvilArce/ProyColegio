@@ -39,6 +39,8 @@ namespace ProyColegio_GUI
                 txtApePat.Text = objProfesorBE.ApePatProfesor;
                 txtApeMat.Text = objProfesorBE.ApeMatProfesor;
                 txtEmail.Text = objProfesorBE.EmailProfesor;
+                mskDni.Text = objProfesorBE.DniProfesor;
+                dtpFecNac.Value = objProfesorBE.FecNacProfesor;
                 txtTel.Text = objProfesorBE.TelProfesor;
                 txtCel.Text = objProfesorBE.CelProfesor;
                 txtDir.Text = objProfesorBE.DirProfesor;
@@ -48,8 +50,7 @@ namespace ProyColegio_GUI
                 CargarUbigeo(idUbigeo.Substring(0, 2), idUbigeo.Substring(2, 2), idUbigeo.Substring(4, 2));
                 Int16 IDCURSO = objProfesorBE.IdProfesor;
                 CargarCurso(IDCURSO);
-
-                //AGREGALE VALIDACIONES
+                                
             }
             catch (Exception ex)
             {
@@ -126,13 +127,13 @@ namespace ProyColegio_GUI
             cboDistrito.DisplayMember = "Distrito";
             cboDistrito.SelectedValue = IdDist;
         }
-        private void CargarCurso(Int16 NOMBRECURSO)
+        private void CargarCurso(Int16 IDCURSO)
         {
             CursoBL objCursoBL = new CursoBL();
             cboCursos.DataSource = objCursoBL.ListarCurso();
             cboCursos.ValueMember = "IDCURSO";
             cboCursos.DisplayMember = "NOMBRECURSO";
-            cboCursos.SelectedValue = NOMBRECURSO;
+            cboCursos.SelectedValue = IDCURSO;
         }
     }
 }
