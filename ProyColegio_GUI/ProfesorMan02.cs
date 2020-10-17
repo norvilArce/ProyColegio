@@ -27,6 +27,7 @@ namespace ProyColegio_GUI
             try
             {
                 CargarUbigeo("14", "01", "01");
+                CargarCurso(1);
             }
             catch (Exception ex)
             {
@@ -106,6 +107,13 @@ namespace ProyColegio_GUI
             this.Close();
         }
 
-        
+        private void CargarCurso(Int16 IDCURSO)
+        {
+            CursoBL objCursoBL = new CursoBL();
+            cboCursos.DataSource = objCursoBL.ListarCurso();
+            cboCursos.ValueMember = "IDCURSO";
+            cboCursos.DisplayMember = "NOMBRECURSO";
+            cboCursos.SelectedValue = IDCURSO;
+        }
     }
 }

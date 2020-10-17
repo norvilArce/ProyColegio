@@ -147,7 +147,7 @@ namespace ProyColegio_ADO
             cnx.ConnectionString = MiConexion.GetCnx();
             cmd.Connection = cnx;
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.CommandText = "usp_ConsultarAlumno";
+            cmd.CommandText = "usp_ConsultarProfesor";
             try
             {
                 cmd.Parameters.Clear();
