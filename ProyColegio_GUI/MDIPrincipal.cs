@@ -51,5 +51,13 @@ namespace ProyColegio_GUI
             cursoMan01.MdiParent = this;
             cursoMan01.Show();
         }
+
+        private void MDIPrincipal_Load(object sender, EventArgs e)
+        {
+            this.lblUsuario.Text = "probando label";//clsCredenciales.Usuario;
+
+
+
+        }
     }
 }

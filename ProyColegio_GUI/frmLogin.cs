@@ -27,20 +27,18 @@ namespace ProyColegio_GUI
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            if(txtLogin .Text.Trim() != "" & txtPassword.Text.Trim() != "")
+            if(txtLogin.Text.Trim() !="" & txtPassword.Text.Trim() !="")
              {
-                // Obtenemos las credenciales de acuerdo al Login ingresado
                 objUsuarioBE = objUsuarioBL.ConsultarUsuario(txtLogin.Text);
 
-                // Si el login no existe....
                 if (objUsuarioBE.LogUsu == null)
                 {
-                    MessageBox.Show("Usuario no existe",
+                    MessageBox.Show("Usuario no existe no no no",
                     "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     intentos += 1;
                     ValidaAccesos(intentos);
                 }
-                // Si el login existe, validamos el password....
+                
                 if (txtLogin.Text == objUsuarioBE.LogUsu & txtPassword.Text == objUsuarioBE.PassUsu )
                 {
                     // Si las credenciales son correctas se  registran las mismas en la clase estatica clsCredenciales
@@ -64,7 +62,7 @@ namespace ProyColegio_GUI
             }
             else
             {
-                MessageBox.Show("Usuario o Password obligatorios",
+                MessageBox.Show("Los campos no pueden estar vacios",
                     "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
                intentos +=1;
                 ValidaAccesos(intentos);
@@ -100,6 +98,19 @@ namespace ProyColegio_GUI
             timer1.Enabled = false;
             Application.Exit();
 
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void frmLogin_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                btnAceptar.PerformClick();
+            }
         }
     }
 }
