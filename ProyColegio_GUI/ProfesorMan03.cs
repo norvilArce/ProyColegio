@@ -46,6 +46,8 @@ namespace ProyColegio_GUI
 
                 String idUbigeo = objProfesorBE.Id_Ubigeo;
                 CargarUbigeo(idUbigeo.Substring(0, 2), idUbigeo.Substring(2, 2), idUbigeo.Substring(4, 2));
+                Int16 IDCURSO = objProfesorBE.IdProfesor;
+                CargarCurso(IDCURSO);
 
                 //AGREGALE VALIDACIONES
             }
@@ -123,6 +125,14 @@ namespace ProyColegio_GUI
             cboDistrito.ValueMember = "IdDist";
             cboDistrito.DisplayMember = "Distrito";
             cboDistrito.SelectedValue = IdDist;
+        }
+        private void CargarCurso(Int16 NOMBRECURSO)
+        {
+            CursoBL objCursoBL = new CursoBL();
+            cboCursos.DataSource = objCursoBL.ListarCurso();
+            cboCursos.ValueMember = "IDCURSO";
+            cboCursos.DisplayMember = "NOMBRECURSO";
+            cboCursos.SelectedValue = NOMBRECURSO;
         }
     }
 }

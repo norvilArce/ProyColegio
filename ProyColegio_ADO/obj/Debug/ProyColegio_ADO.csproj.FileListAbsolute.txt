@@ -7,3 +7,7 @@ D:\ISIL\DESARROLLO DE SOFTWARE\3er ciclo\Desarrollo de Aplicaciones I\proyecto\r
 D:\ISIL\DESARROLLO DE SOFTWARE\3er ciclo\Desarrollo de Aplicaciones I\proyecto\repo\ProyColegio\ProyColegio_ADO\obj\Debug\ProyColegio_ADO.csproj.CopyComplete
 D:\ISIL\DESARROLLO DE SOFTWARE\3er ciclo\Desarrollo de Aplicaciones I\proyecto\repo\ProyColegio\ProyColegio_ADO\obj\Debug\ProyColegio_ADO.dll
 D:\ISIL\DESARROLLO DE SOFTWARE\3er ciclo\Desarrollo de Aplicaciones I\proyecto\repo\ProyColegio\ProyColegio_ADO\obj\Debug\ProyColegio_ADO.pdb
+C:\Users\Jean Pierre\Source\Repos\ProyColegio\ProyColegio_ADO\obj\Debug\ProyColegio_ADO.csprojAssemblyReference.cache
+C:\Users\Jean Pierre\Source\Repos\ProyColegio\ProyColegio_ADO\obj\Debug\ProyColegio_ADO.csproj.CoreCompileInputs.cache
+C:\Users\Jean Pierre\Source\Repos\ProyColegio\ProyColegio_ADO\obj\Debug\ProyColegio_ADO.dll
+C:\Users\Jean Pierre\Source\Repos\ProyColegio\ProyColegio_ADO\obj\Debug\ProyColegio_ADO.pdb

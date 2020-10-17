@@ -25,7 +25,7 @@ namespace ProyColegio_GUI
         public void CargarDatos(String strFiltro)
         {
             //dtgVendedor.AutoGenerateColumns = false;
-            dtv.RowFilter = "ape_ven like '%" + strFiltro + "%'";
+            dtv.RowFilter = "APEPATERNO like '%" + strFiltro + "%'";
             dtgProfesor.DataSource = dtv;
             lblRegistros.Text = dtgProfesor.Rows.Count.ToString();
         }

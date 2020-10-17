@@ -37,7 +37,7 @@ namespace ProyColegio_ADO {
             }
             catch (SqlException x) {
                 throw new Exception(x.Message);
-                return false;
+
             }
             finally {
                 if (cnx.State == ConnectionState.Open) {
@@ -68,7 +68,6 @@ namespace ProyColegio_ADO {
             }
             catch (SqlException x) {
                 throw new Exception(x.Message);
-                return false;
             }
             finally {
                 if (cnx.State == ConnectionState.Open) {
@@ -93,7 +92,7 @@ namespace ProyColegio_ADO {
             }
             catch (SqlException x) {
                 throw new Exception(x.Message);
-                return false;
+
             }
             finally {
                 if (cnx.State == ConnectionState.Open) {

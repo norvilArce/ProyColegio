@@ -59,11 +59,15 @@
             this.Label3 = new System.Windows.Forms.Label();
             this.Label4 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
+            this.cboCursos = new System.Windows.Forms.ComboBox();
             this.grpDatos.SuspendLayout();
             this.SuspendLayout();
             // 
             // grpDatos
             // 
+            this.grpDatos.Controls.Add(this.cboCursos);
+            this.grpDatos.Controls.Add(this.label14);
             this.grpDatos.Controls.Add(this.txtCel);
             this.grpDatos.Controls.Add(this.label13);
             this.grpDatos.Controls.Add(this.lblId);
@@ -217,7 +221,7 @@
             // 
             this.cboDepartamento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboDepartamento.FormattingEnabled = true;
-            this.cboDepartamento.Location = new System.Drawing.Point(128, 270);
+            this.cboDepartamento.Location = new System.Drawing.Point(127, 295);
             this.cboDepartamento.Name = "cboDepartamento";
             this.cboDepartamento.Size = new System.Drawing.Size(280, 21);
             this.cboDepartamento.TabIndex = 9;
@@ -226,7 +230,7 @@
             // 
             this.cboProvincia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboProvincia.FormattingEnabled = true;
-            this.cboProvincia.Location = new System.Drawing.Point(128, 301);
+            this.cboProvincia.Location = new System.Drawing.Point(127, 326);
             this.cboProvincia.Name = "cboProvincia";
             this.cboProvincia.Size = new System.Drawing.Size(280, 21);
             this.cboProvincia.TabIndex = 10;
@@ -235,7 +239,7 @@
             // 
             this.cboDistrito.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboDistrito.FormattingEnabled = true;
-            this.cboDistrito.Location = new System.Drawing.Point(128, 332);
+            this.cboDistrito.Location = new System.Drawing.Point(127, 357);
             this.cboDistrito.Name = "cboDistrito";
             this.cboDistrito.Size = new System.Drawing.Size(280, 21);
             this.cboDistrito.TabIndex = 11;
@@ -283,11 +287,11 @@
             this.Label2.Name = "Label2";
             this.Label2.Size = new System.Drawing.Size(64, 16);
             this.Label2.TabIndex = 23;
-            this.Label2.Text = "Direccion";
+            this.Label2.Text = "Direccion:";
             // 
             // label6
             // 
-            this.label6.Location = new System.Drawing.Point(16, 271);
+            this.label6.Location = new System.Drawing.Point(15, 296);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(80, 18);
             this.label6.TabIndex = 24;
@@ -311,7 +315,7 @@
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(15, 303);
+            this.label5.Location = new System.Drawing.Point(14, 328);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(64, 16);
             this.label5.TabIndex = 25;
@@ -327,7 +331,7 @@
             // 
             // Label4
             // 
-            this.Label4.Location = new System.Drawing.Point(15, 334);
+            this.Label4.Location = new System.Drawing.Point(14, 359);
             this.Label4.Name = "Label4";
             this.Label4.Size = new System.Drawing.Size(64, 16);
             this.Label4.TabIndex = 26;
@@ -340,6 +344,23 @@
             this.btnCancelar.Size = new System.Drawing.Size(72, 24);
             this.btnCancelar.TabIndex = 15;
             this.btnCancelar.Text = "Cancelar";
+            // 
+            // label14
+            // 
+            this.label14.Location = new System.Drawing.Point(14, 269);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(64, 16);
+            this.label14.TabIndex = 34;
+            this.label14.Text = "Curso:";
+            // 
+            // cboCursos
+            // 
+            this.cboCursos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboCursos.FormattingEnabled = true;
+            this.cboCursos.Location = new System.Drawing.Point(127, 266);
+            this.cboCursos.Name = "cboCursos";
+            this.cboCursos.Size = new System.Drawing.Size(280, 21);
+            this.cboCursos.TabIndex = 35;
             // 
             // ProfesorMan03
             // 
@@ -394,5 +415,7 @@
         internal System.Windows.Forms.Button btnCancelar;
         internal System.Windows.Forms.TextBox txtCel;
         internal System.Windows.Forms.Label label13;
+        private System.Windows.Forms.ComboBox cboCursos;
+        internal System.Windows.Forms.Label label14;
     }
 }
