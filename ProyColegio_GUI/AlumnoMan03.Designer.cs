@@ -364,10 +364,8 @@
             this.btnCancelar.Size = new System.Drawing.Size(72, 24);
             this.btnCancelar.TabIndex = 15;
             this.btnCancelar.Text = "Cancelar";
-<<<<<<< HEAD
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-=======
->>>>>>> 79582d6ce0db204272e6df52927e99d6e747a47a
+
             // 
             // AlumnoMan03
             // 
