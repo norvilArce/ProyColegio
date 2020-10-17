@@ -36,6 +36,17 @@
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnInsertar = new System.Windows.Forms.Button();
             this.dtgAlumno = new System.Windows.Forms.DataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NOMBRE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DNI = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FECHANAC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TELEFONO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DIRECCION = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FECHAREG = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.USARIO_REG = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ULTIMAMOD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.USU_ULT_MOD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ESTADO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtgAlumno)).BeginInit();
             this.SuspendLayout();
             // 
@@ -117,6 +128,18 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dtgAlumno.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgAlumno.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgAlumno.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.NOMBRE,
+            this.DNI,
+            this.FECHANAC,
+            this.TELEFONO,
+            this.DIRECCION,
+            this.FECHAREG,
+            this.USARIO_REG,
+            this.ULTIMAMOD,
+            this.USU_ULT_MOD,
+            this.ESTADO});
             this.dtgAlumno.Location = new System.Drawing.Point(12, 49);
             this.dtgAlumno.Name = "dtgAlumno";
             this.dtgAlumno.ReadOnly = true;
@@ -125,6 +148,83 @@
             this.dtgAlumno.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtgAlumno.Size = new System.Drawing.Size(762, 379);
             this.dtgAlumno.TabIndex = 0;
+            // 
+            // ID
+            // 
+            this.ID.DataPropertyName = "IDALUMNO";
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            this.ID.ReadOnly = true;
+            // 
+            // NOMBRE
+            // 
+            this.NOMBRE.DataPropertyName = "APELLNOMBRES";
+            this.NOMBRE.HeaderText = "NOMBRE";
+            this.NOMBRE.Name = "NOMBRE";
+            this.NOMBRE.ReadOnly = true;
+            // 
+            // DNI
+            // 
+            this.DNI.DataPropertyName = "DNI";
+            this.DNI.HeaderText = "DNI";
+            this.DNI.Name = "DNI";
+            this.DNI.ReadOnly = true;
+            // 
+            // FECHANAC
+            // 
+            this.FECHANAC.DataPropertyName = "FECHANACI";
+            this.FECHANAC.HeaderText = "FECHA DE NACIMIENTO";
+            this.FECHANAC.Name = "FECHANAC";
+            this.FECHANAC.ReadOnly = true;
+            // 
+            // TELEFONO
+            // 
+            this.TELEFONO.DataPropertyName = "TELEFONO";
+            this.TELEFONO.HeaderText = "TELEFONO";
+            this.TELEFONO.Name = "TELEFONO";
+            this.TELEFONO.ReadOnly = true;
+            // 
+            // DIRECCION
+            // 
+            this.DIRECCION.DataPropertyName = "DIRECCION";
+            this.DIRECCION.HeaderText = "DIRECCION";
+            this.DIRECCION.Name = "DIRECCION";
+            this.DIRECCION.ReadOnly = true;
+            // 
+            // FECHAREG
+            // 
+            this.FECHAREG.DataPropertyName = "FECHA_REGISTRO";
+            this.FECHAREG.HeaderText = "FECHA DE REGISTRO";
+            this.FECHAREG.Name = "FECHAREG";
+            this.FECHAREG.ReadOnly = true;
+            // 
+            // USARIO_REG
+            // 
+            this.USARIO_REG.DataPropertyName = "USUARIO_REGISTRO";
+            this.USARIO_REG.HeaderText = "USUARIO REGISTRO";
+            this.USARIO_REG.Name = "USARIO_REG";
+            this.USARIO_REG.ReadOnly = true;
+            // 
+            // ULTIMAMOD
+            // 
+            this.ULTIMAMOD.DataPropertyName = "FECHA_ULT_MODIFICACION";
+            this.ULTIMAMOD.HeaderText = "ULTIMA MODIFICACION";
+            this.ULTIMAMOD.Name = "ULTIMAMOD";
+            this.ULTIMAMOD.ReadOnly = true;
+            // 
+            // USU_ULT_MOD
+            // 
+            this.USU_ULT_MOD.DataPropertyName = "USUARIO_ULT_MODIFICACION";
+            this.USU_ULT_MOD.HeaderText = "USUARIO ULTIMA MODIFICACION";
+            this.USU_ULT_MOD.Name = "USU_ULT_MOD";
+            this.USU_ULT_MOD.ReadOnly = true;
+            // 
+            // ESTADO
+            // 
+            this.ESTADO.DataPropertyName = "ESTADO";
+            this.ESTADO.HeaderText = "ESTADO";
+            this.ESTADO.Name = "ESTADO";
+            this.ESTADO.ReadOnly = true;
             // 
             // AlumnoMan01
             // 
@@ -160,5 +260,16 @@
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Button btnInsertar;
         private System.Windows.Forms.DataGridView dtgAlumno;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NOMBRE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DNI;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FECHANAC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TELEFONO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DIRECCION;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FECHAREG;
+        private System.Windows.Forms.DataGridViewTextBoxColumn USARIO_REG;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ULTIMAMOD;
+        private System.Windows.Forms.DataGridViewTextBoxColumn USU_ULT_MOD;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ESTADO;
     }
 }

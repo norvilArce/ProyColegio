@@ -71,6 +71,7 @@ namespace ProyColegio_GUI
                     + cboProvincia.SelectedValue.ToString()
                     + cboDistrito.SelectedValue.ToString();
                 objProfesorBE.Est_Prof = Convert.ToInt16(chkEstado.Checked);
+                objProfesorBE.idCurso = Convert.ToInt16(cboCursos.SelectedValue);
 
                 //agregar validaciones
                 if (txtNombre.Text == "")

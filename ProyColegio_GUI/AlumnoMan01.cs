@@ -23,7 +23,7 @@ namespace ProyColegio_GUI
 
         public void CargarDatos(String strFiltro)
         {
-            dtv.RowFilter = "APEPATERNO like '%" + strFiltro + "%'";
+            dtv.RowFilter = "APELLNOMBRES like '%" + strFiltro + "%'";
             dtgAlumno.DataSource = dtv;
             lblRegistros.Text = dtgAlumno.Rows.Count.ToString();
         }
@@ -38,7 +38,7 @@ namespace ProyColegio_GUI
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error" + ex.Message);
+                MessageBox.Show("Error: " + ex.Message);
             }
         }
 
@@ -60,7 +60,7 @@ namespace ProyColegio_GUI
 
                 String strId = dtgAlumno.CurrentRow.Cells[0].Value.ToString();
                 alumnoMan03.Id = strId;
-
+                alumnoMan03.ShowDialog();
                 txtFiltro.Text = "";
                 dtv = new DataView(objAlumnoBL.ListarAlumno());
                 CargarDatos("");

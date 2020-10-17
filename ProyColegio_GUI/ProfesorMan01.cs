@@ -25,7 +25,7 @@ namespace ProyColegio_GUI
         public void CargarDatos(String strFiltro)
         {
             //dtgVendedor.AutoGenerateColumns = false;
-            dtv.RowFilter = "APEPATERNO like '%" + strFiltro + "%'";
+            dtv.RowFilter = "APELLNOMBRE like '%" + strFiltro + "%'";
             dtgProfesor.DataSource = dtv;
             lblRegistros.Text = dtgProfesor.Rows.Count.ToString();
         }
@@ -34,8 +34,7 @@ namespace ProyColegio_GUI
         {
             try
             {
-                dtgProfesor.AutoGenerateColumns = false;
-                // Creamos la vista en memoria y cargamos los datos
+                //dtgProfesor.AutoGenerateColumns = false;
                 dtv = new DataView(objProfesorBL.ListarProfesor());
                 CargarDatos("");
             }

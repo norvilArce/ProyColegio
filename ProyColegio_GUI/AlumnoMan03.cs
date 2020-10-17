@@ -66,7 +66,6 @@ namespace ProyColegio_GUI
         {
             try
             {
-                //agregar validaciones
                 objAlumnoBE.NomAlumno = txtNombre.Text.Trim();
                 objAlumnoBE.ApePatAlumno = txtApePat.Text.Trim();
                 objAlumnoBE.ApeMatAlumno = txtApeMat.Text.Trim();

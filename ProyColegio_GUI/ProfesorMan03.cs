@@ -49,7 +49,7 @@ namespace ProyColegio_GUI
                 Int16 IDCURSO = objProfesorBE.IdProfesor;
                 CargarCurso(IDCURSO);
 
-                //AGREGALE VALIDACIONES
+                //AGREGALE VALIDACIONES ESPERANCITOOOOOOOOOOO
             }
             catch (Exception ex)
             {
@@ -126,13 +126,13 @@ namespace ProyColegio_GUI
             cboDistrito.DisplayMember = "Distrito";
             cboDistrito.SelectedValue = IdDist;
         }
-        private void CargarCurso(Int16 NOMBRECURSO)
+        private void CargarCurso(Int16 IDCURSO)
         {
             CursoBL objCursoBL = new CursoBL();
             cboCursos.DataSource = objCursoBL.ListarCurso();
             cboCursos.ValueMember = "IDCURSO";
             cboCursos.DisplayMember = "NOMBRECURSO";
-            cboCursos.SelectedValue = NOMBRECURSO;
+            cboCursos.SelectedValue = IDCURSO;
         }
     }
 }
