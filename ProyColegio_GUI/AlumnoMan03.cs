@@ -50,10 +50,20 @@ namespace ProyColegio_GUI
                 String idUbigeo = objAlumnoBE.Id_Ubigeo;
                 Int16 idPadre = objAlumnoBE.IdPadre;
                 Int16 idPeriodo = objAlumnoBE.IdPeriodo;
-
-                cargarPadres(idPadre);
+                
                 cargarPeriodos(idPeriodo);
+                cargarPadres(idPadre);
                 CargarUbigeo(idUbigeo.Substring(0, 2), idUbigeo.Substring(2, 2), idUbigeo.Substring(4, 2));
+                if (chkEstado.Checked) 
+                {
+                    cboPeriodo.Enabled = true;
+                    
+                }
+                else
+                {
+                    cboPeriodo.Enabled = false;
+                }
+
             }
             catch (Exception ex)
             {
@@ -153,17 +163,17 @@ namespace ProyColegio_GUI
             cboPeriodo.SelectedValue = strIdPeriodo;
         }
 
-        private void cboDepartamento_SelectedIndexChanged(object sender, EventArgs e)
+        private void cboDepartamento_SelectionChangeCommitted(object sender, EventArgs e)
         {
             CargarUbigeo(cboDepartamento.SelectedValue.ToString(), "01", "01");
         }
 
-        private void cboProvincia_SelectedIndexChanged(object sender, EventArgs e)
+        private void cboProvincia_SelectionChangeCommitted(object sender, EventArgs e)
         {
             CargarUbigeo(cboDepartamento.SelectedValue.ToString(), cboProvincia.SelectedValue.ToString(), "01");
         }
 
-        private void chkEstado_CheckedChanged(object sender, EventArgs e)
+        private void chkEstado_CheckStateChanged(object sender, EventArgs e)
         {
             if (chkEstado.Checked)
             {

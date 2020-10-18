@@ -9,3 +9,14 @@ C:\Users\Jean Pierre\Source\Repos\ProyColegio\ProyColegio_BL\bin\Debug\ProyColeg
 C:\Users\Jean Pierre\Source\Repos\ProyColegio\ProyColegio_BL\bin\Debug\ProyColegio_ADO.pdb
 C:\Users\Jean Pierre\Source\Repos\ProyColegio\ProyColegio_BL\bin\Debug\ProyColegio_BE.pdb
 C:\Users\Jean Pierre\Source\Repos\ProyColegio\ProyColegio_BL\obj\Debug\ProyColegio_BL.csproj.CopyComplete
+D:\ISIL\DESARROLLO DE SOFTWARE\3er ciclo\Desarrollo de Aplicaciones I\proyecto\repo\ProyColegio\ProyColegio_BL\bin\Debug\ProyColegio_BL.dll
+D:\ISIL\DESARROLLO DE SOFTWARE\3er ciclo\Desarrollo de Aplicaciones I\proyecto\repo\ProyColegio\ProyColegio_BL\bin\Debug\ProyColegio_BL.pdb
+D:\ISIL\DESARROLLO DE SOFTWARE\3er ciclo\Desarrollo de Aplicaciones I\proyecto\repo\ProyColegio\ProyColegio_BL\bin\Debug\ProyColegio_ADO.dll
+D:\ISIL\DESARROLLO DE SOFTWARE\3er ciclo\Desarrollo de Aplicaciones I\proyecto\repo\ProyColegio\ProyColegio_BL\bin\Debug\ProyColegio_BE.dll
+D:\ISIL\DESARROLLO DE SOFTWARE\3er ciclo\Desarrollo de Aplicaciones I\proyecto\repo\ProyColegio\ProyColegio_BL\bin\Debug\ProyColegio_ADO.pdb
+D:\ISIL\DESARROLLO DE SOFTWARE\3er ciclo\Desarrollo de Aplicaciones I\proyecto\repo\ProyColegio\ProyColegio_BL\bin\Debug\ProyColegio_BE.pdb
+D:\ISIL\DESARROLLO DE SOFTWARE\3er ciclo\Desarrollo de Aplicaciones I\proyecto\repo\ProyColegio\ProyColegio_BL\obj\Debug\ProyColegio_BL.csprojAssemblyReference.cache
+D:\ISIL\DESARROLLO DE SOFTWARE\3er ciclo\Desarrollo de Aplicaciones I\proyecto\repo\ProyColegio\ProyColegio_BL\obj\Debug\ProyColegio_BL.csproj.CoreCompileInputs.cache
+D:\ISIL\DESARROLLO DE SOFTWARE\3er ciclo\Desarrollo de Aplicaciones I\proyecto\repo\ProyColegio\ProyColegio_BL\obj\Debug\ProyColegio_BL.csproj.CopyComplete
+D:\ISIL\DESARROLLO DE SOFTWARE\3er ciclo\Desarrollo de Aplicaciones I\proyecto\repo\ProyColegio\ProyColegio_BL\obj\Debug\ProyColegio_BL.dll
+D:\ISIL\DESARROLLO DE SOFTWARE\3er ciclo\Desarrollo de Aplicaciones I\proyecto\repo\ProyColegio\ProyColegio_BL\obj\Debug\ProyColegio_BL.pdb

@@ -12,6 +12,8 @@ namespace ProyColegio_GUI
 {
     public partial class MDIPrincipal : Form
     {
+        DateTime horaentrada = new DateTime();
+
         public MDIPrincipal()
         {
             InitializeComponent();
@@ -51,13 +53,17 @@ namespace ProyColegio_GUI
             cursoMan01.MdiParent = this;
             cursoMan01.Show();
         }
-        TimeSpan horaentrada = new TimeSpan();
+        
         private void timer1_Tick(object sender, EventArgs e)
         {
-            this.Text = "Sistemas de hora de HighSchool " + DateTime.Now;
-            lblUsuario.Text = "Tiempo de sesion : " +
-                DateTime.Now.TimeOfDay.Subtract(horaentrada).ToString().Substring(0, 8);
+            this.Text = "Menu Principal - Elite Way School - " + DateTime.Now.ToString();
+            lblHora.Text = "Tiempo de sesion : " + DateTime.Now.Subtract(horaentrada).ToString().Substring(0,8);
         }
 
+        private void MDIPrincipal_Load(object sender, EventArgs e)
+        {
+            lblUsuario.Text = clsCredenciales.Usuario;
+            horaentrada = DateTime.Now;
+        }
     }
 }

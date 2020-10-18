@@ -126,5 +126,27 @@ namespace ProyColegio_GUI
             cboPeriodo.DisplayMember = "ANUAL";
             cboPeriodo.SelectedValue = strIdPeriodo;
         }
+
+        private void cboDepartamento_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            CargarUbigeo(cboDepartamento.SelectedValue.ToString(), "01", "01");
+        }
+
+        private void cboProvincia_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            CargarUbigeo(cboDepartamento.SelectedValue.ToString(), cboProvincia.SelectedValue.ToString(), "01");
+        }
+
+        private void chkEstado_CheckStateChanged(object sender, EventArgs e)
+        {
+            if (chkEstado.Checked)
+            {
+                cboPeriodo.Enabled = true;
+            }
+            else
+            {
+                cboPeriodo.Enabled = false;
+            }
+        }
     }
 }
