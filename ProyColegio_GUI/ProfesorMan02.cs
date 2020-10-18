@@ -73,6 +73,8 @@ namespace ProyColegio_GUI
                     + cboDistrito.SelectedValue.ToString();
                 objProfesorBE.Est_Prof = Convert.ToInt16(chkEstado.Checked);
                 objProfesorBE.idCurso = Convert.ToInt16(cboCursos.SelectedValue);
+                objProfesorBE.Usu_Registro = clsCredenciales.Usuario;
+                objProfesorBE.Usu_Ult_Mod = clsCredenciales.Usuario;
 
                 //agregar validaciones
                 if (txtNombre.Text == "")
@@ -114,6 +116,16 @@ namespace ProyColegio_GUI
             cboCursos.ValueMember = "IDCURSO";
             cboCursos.DisplayMember = "NOMBRECURSO";
             cboCursos.SelectedValue = IDCURSO;
+        }
+
+        private void cboDepartamento_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CargarUbigeo(cboDepartamento.SelectedValue.ToString(), "01", "01");
+        }
+
+        private void cboProvincia_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CargarUbigeo(cboDepartamento.SelectedValue.ToString(), cboProvincia.SelectedValue.ToString(), "01");
         }
     }
 }

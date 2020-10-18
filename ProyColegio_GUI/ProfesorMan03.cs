@@ -135,5 +135,15 @@ namespace ProyColegio_GUI
             cboCursos.DisplayMember = "NOMBRECURSO";
             cboCursos.SelectedValue = IDCURSO;
         }
+
+        private void cboDepartamento_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CargarUbigeo(cboDepartamento.SelectedValue.ToString(), "01", "01");
+        }
+
+        private void cboProvincia_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CargarUbigeo(cboDepartamento.SelectedValue.ToString(), cboProvincia.SelectedValue.ToString(), "01");
+        }
     }
 }

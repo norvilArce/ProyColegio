@@ -80,6 +80,7 @@ namespace ProyColegio_GUI
                     + cboDistrito.SelectedValue.ToString();
                 objAlumnoBE.IdPeriodo = Convert.ToInt16(cboPeriodo.SelectedValue);
                 objAlumnoBE.Est_Alum = Convert.ToInt16(chkEstado.Checked);
+                objAlumnoBE.Usu_Ult_Mod = clsCredenciales.Usuario;
 
                 if (txtNombre.Text == "")
                 {
@@ -150,6 +151,28 @@ namespace ProyColegio_GUI
             cboPeriodo.ValueMember = "IDPERIODO";
             cboPeriodo.DisplayMember = "ANUAL";
             cboPeriodo.SelectedValue = strIdPeriodo;
+        }
+
+        private void cboDepartamento_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CargarUbigeo(cboDepartamento.SelectedValue.ToString(), "01", "01");
+        }
+
+        private void cboProvincia_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CargarUbigeo(cboDepartamento.SelectedValue.ToString(), cboProvincia.SelectedValue.ToString(), "01");
+        }
+
+        private void chkEstado_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkEstado.Checked)
+            {
+                cboPeriodo.Enabled = true;
+            }
+            else
+            {
+                cboPeriodo.Enabled = false;
+            }
         }
     }
 }

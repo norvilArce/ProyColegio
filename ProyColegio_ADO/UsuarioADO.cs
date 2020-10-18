@@ -39,7 +39,6 @@ namespace ProyColegio_ADO
                     objUsuarioBE.NivUsu = Convert.ToInt16(dtr["NivUsu"]);
                     objUsuarioBE.FecReg = Convert.ToDateTime(dtr["FecReg"]);
                     objUsuarioBE.UsuReg = dtr["UsuReg"].ToString();
-                    objUsuarioBE.EstUsu = Convert.ToInt16(dtr["EstUsu"]);
                 }
                 dtr.Close();
                 return objUsuarioBE;

@@ -11,7 +11,6 @@ namespace ProyColegio_BE
         private String mvarlogin_usuario;
         private String mvarpass_usuario;
         private Int16 mvarniv_usuario;
-        private Int16 mvarest_usuario;
         private DateTime mvarfec_registro;
         private String mvarusu_registro;
 
@@ -33,11 +32,6 @@ namespace ProyColegio_BE
             set { mvarniv_usuario = value; }
         }
 
-        public Int16 EstUsu
-        {
-            get { return mvarest_usuario; }
-            set { mvarest_usuario = value; }
-        }
 
         public DateTime FecReg
         {

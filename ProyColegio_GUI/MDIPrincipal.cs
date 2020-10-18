@@ -54,10 +54,10 @@ namespace ProyColegio_GUI
         TimeSpan horaentrada = new TimeSpan();
         private void timer1_Tick(object sender, EventArgs e)
         {
-            this.Text = "Sistemas HighSchool da la hora " + DateTime.Now;
-
+            this.Text = "Sistemas de hora de HighSchool " + DateTime.Now;
             lblUsuario.Text = "Tiempo de sesion : " +
                 DateTime.Now.TimeOfDay.Subtract(horaentrada).ToString().Substring(0, 8);
         }
+
     }
 }

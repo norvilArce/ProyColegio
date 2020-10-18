@@ -56,6 +56,8 @@ namespace ProyColegio_GUI
                     + cboDistrito.SelectedValue.ToString();
                 objAlumnoBE.IdPeriodo = Convert.ToInt16(cboPeriodo.SelectedValue);
                 objAlumnoBE.Est_Alum = Convert.ToInt16(chkEstado.Checked);
+                objAlumnoBE.Usu_Registro = clsCredenciales.Usuario;
+                objAlumnoBE.Usu_Ult_Mod = clsCredenciales.Usuario;
 
                 //agregar validaciones
                 if (txtNombre.Text=="")
