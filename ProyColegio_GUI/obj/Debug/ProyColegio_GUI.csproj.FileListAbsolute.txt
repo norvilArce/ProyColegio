@@ -48,3 +48,13 @@ C:\Users\Jean Pierre\Source\Repos\ProyColegio\ProyColegio_GUI\obj\Debug\ProyVent
 C:\Users\Jean Pierre\Source\Repos\ProyColegio\ProyColegio_GUI\obj\Debug\ProyColegio_GUI.frmLogin.resources
 >>>>>>> cfc16f4f9f7b9fe08f993083ba5d3b621c564ebf
 D:\ISIL\DESARROLLO DE SOFTWARE\3er ciclo\Desarrollo de Aplicaciones I\proyecto\repo\ProyColegio\ProyColegio_GUI\obj\Debug\ProyColegio_GUI.frmLogin.resources
+C:\Users\Jean Pierre\Source\Repos\ProyColegio\ProyColegio_GUI\bin\Debug\ProyColegio_GUI.exe.config
+C:\Users\Jean Pierre\Source\Repos\ProyColegio\ProyColegio_GUI\bin\Debug\ProyColegio_GUI.exe
+C:\Users\Jean Pierre\Source\Repos\ProyColegio\ProyColegio_GUI\bin\Debug\ProyColegio_GUI.pdb
+C:\Users\Jean Pierre\Source\Repos\ProyColegio\ProyColegio_GUI\bin\Debug\ProyColegio_BE.dll
+C:\Users\Jean Pierre\Source\Repos\ProyColegio\ProyColegio_GUI\bin\Debug\ProyColegio_BL.dll
+C:\Users\Jean Pierre\Source\Repos\ProyColegio\ProyColegio_GUI\bin\Debug\ProyColegio_ADO.dll
+C:\Users\Jean Pierre\Source\Repos\ProyColegio\ProyColegio_GUI\bin\Debug\ProyColegio_BE.pdb
+C:\Users\Jean Pierre\Source\Repos\ProyColegio\ProyColegio_GUI\bin\Debug\ProyColegio_BL.pdb
+C:\Users\Jean Pierre\Source\Repos\ProyColegio\ProyColegio_GUI\bin\Debug\ProyColegio_ADO.pdb
+C:\Users\Jean Pierre\Source\Repos\ProyColegio\ProyColegio_GUI\obj\Debug\ProyColegio_GUI.csproj.CopyComplete

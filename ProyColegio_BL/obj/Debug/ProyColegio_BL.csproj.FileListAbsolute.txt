@@ -2,3 +2,10 @@ C:\Users\Jean Pierre\Source\Repos\ProyColegio\ProyColegio_BL\obj\Debug\ProyColeg
 C:\Users\Jean Pierre\Source\Repos\ProyColegio\ProyColegio_BL\obj\Debug\ProyColegio_BL.csproj.CoreCompileInputs.cache
 C:\Users\Jean Pierre\Source\Repos\ProyColegio\ProyColegio_BL\obj\Debug\ProyColegio_BL.dll
 C:\Users\Jean Pierre\Source\Repos\ProyColegio\ProyColegio_BL\obj\Debug\ProyColegio_BL.pdb
+C:\Users\Jean Pierre\Source\Repos\ProyColegio\ProyColegio_BL\bin\Debug\ProyColegio_BL.dll
+C:\Users\Jean Pierre\Source\Repos\ProyColegio\ProyColegio_BL\bin\Debug\ProyColegio_BL.pdb
+C:\Users\Jean Pierre\Source\Repos\ProyColegio\ProyColegio_BL\bin\Debug\ProyColegio_ADO.dll
+C:\Users\Jean Pierre\Source\Repos\ProyColegio\ProyColegio_BL\bin\Debug\ProyColegio_BE.dll
+C:\Users\Jean Pierre\Source\Repos\ProyColegio\ProyColegio_BL\bin\Debug\ProyColegio_ADO.pdb
+C:\Users\Jean Pierre\Source\Repos\ProyColegio\ProyColegio_BL\bin\Debug\ProyColegio_BE.pdb
+C:\Users\Jean Pierre\Source\Repos\ProyColegio\ProyColegio_BL\obj\Debug\ProyColegio_BL.csproj.CopyComplete
