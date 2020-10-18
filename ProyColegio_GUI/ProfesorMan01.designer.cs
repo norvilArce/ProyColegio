@@ -36,6 +36,18 @@
             this.lblRegistros = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dtgProfesor = new System.Windows.Forms.DataGridView();
+            this.IDPROFESOR = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NOMBRE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DNI = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FECHANACIMIENTO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TELEFONO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CELULAR = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DIRECCION = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FECHAREGISTRO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.USUARIOREGISTRO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FECHAULTMOD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.USU_ULT_MOD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ESTADO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtgProfesor)).BeginInit();
             this.SuspendLayout();
             // 
@@ -117,6 +129,19 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dtgProfesor.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgProfesor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgProfesor.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IDPROFESOR,
+            this.NOMBRE,
+            this.DNI,
+            this.FECHANACIMIENTO,
+            this.TELEFONO,
+            this.CELULAR,
+            this.DIRECCION,
+            this.FECHAREGISTRO,
+            this.USUARIOREGISTRO,
+            this.FECHAULTMOD,
+            this.USU_ULT_MOD,
+            this.ESTADO});
             this.dtgProfesor.Location = new System.Drawing.Point(12, 38);
             this.dtgProfesor.Name = "dtgProfesor";
             this.dtgProfesor.ReadOnly = true;
@@ -126,10 +151,95 @@
             this.dtgProfesor.Size = new System.Drawing.Size(762, 379);
             this.dtgProfesor.TabIndex = 13;
             // 
+            // IDPROFESOR
+            // 
+            this.IDPROFESOR.DataPropertyName = "IDPROFESOR";
+            this.IDPROFESOR.HeaderText = "ID";
+            this.IDPROFESOR.Name = "IDPROFESOR";
+            this.IDPROFESOR.ReadOnly = true;
+            // 
+            // NOMBRE
+            // 
+            this.NOMBRE.DataPropertyName = "APELLNOMBRES";
+            this.NOMBRE.HeaderText = "NOMBRES";
+            this.NOMBRE.Name = "NOMBRE";
+            this.NOMBRE.ReadOnly = true;
+            // 
+            // DNI
+            // 
+            this.DNI.DataPropertyName = "DNI";
+            this.DNI.HeaderText = "DNI";
+            this.DNI.Name = "DNI";
+            this.DNI.ReadOnly = true;
+            // 
+            // FECHANACIMIENTO
+            // 
+            this.FECHANACIMIENTO.DataPropertyName = "FECHANACI";
+            this.FECHANACIMIENTO.HeaderText = "FECHA NACIMIENTO";
+            this.FECHANACIMIENTO.Name = "FECHANACIMIENTO";
+            this.FECHANACIMIENTO.ReadOnly = true;
+            // 
+            // TELEFONO
+            // 
+            this.TELEFONO.DataPropertyName = "TELEFONO";
+            this.TELEFONO.HeaderText = "TELEFONO";
+            this.TELEFONO.Name = "TELEFONO";
+            this.TELEFONO.ReadOnly = true;
+            // 
+            // CELULAR
+            // 
+            this.CELULAR.DataPropertyName = "CELULAR";
+            this.CELULAR.HeaderText = "CELULAR";
+            this.CELULAR.Name = "CELULAR";
+            this.CELULAR.ReadOnly = true;
+            // 
+            // DIRECCION
+            // 
+            this.DIRECCION.DataPropertyName = "DIRECCION";
+            this.DIRECCION.HeaderText = "DIRECCION";
+            this.DIRECCION.Name = "DIRECCION";
+            this.DIRECCION.ReadOnly = true;
+            // 
+            // FECHAREGISTRO
+            // 
+            this.FECHAREGISTRO.DataPropertyName = "FECHA_REGISTRO";
+            this.FECHAREGISTRO.HeaderText = "FECHA REGISTRO";
+            this.FECHAREGISTRO.Name = "FECHAREGISTRO";
+            this.FECHAREGISTRO.ReadOnly = true;
+            // 
+            // USUARIOREGISTRO
+            // 
+            this.USUARIOREGISTRO.DataPropertyName = "USUARIO_REGISTRO";
+            this.USUARIOREGISTRO.HeaderText = "USUARIO REGISTRO";
+            this.USUARIOREGISTRO.Name = "USUARIOREGISTRO";
+            this.USUARIOREGISTRO.ReadOnly = true;
+            // 
+            // FECHAULTMOD
+            // 
+            this.FECHAULTMOD.DataPropertyName = "FECHA_ULT_MODIFICACION";
+            this.FECHAULTMOD.HeaderText = "FECHA ULTIMA MODIFICACION";
+            this.FECHAULTMOD.Name = "FECHAULTMOD";
+            this.FECHAULTMOD.ReadOnly = true;
+            // 
+            // USU_ULT_MOD
+            // 
+            this.USU_ULT_MOD.DataPropertyName = "USUARIO_ULT_MODIFICACION";
+            this.USU_ULT_MOD.HeaderText = "USUARIO ULTIMA MODIFICACION";
+            this.USU_ULT_MOD.Name = "USU_ULT_MOD";
+            this.USU_ULT_MOD.ReadOnly = true;
+            // 
+            // ESTADO
+            // 
+            this.ESTADO.DataPropertyName = "ESTADO";
+            this.ESTADO.HeaderText = "ESTADO";
+            this.ESTADO.Name = "ESTADO";
+            this.ESTADO.ReadOnly = true;
+            // 
             // ProfesorMan01
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(786, 507);
             this.Controls.Add(this.dtgProfesor);
             this.Controls.Add(this.lblRegistros);
@@ -158,5 +268,17 @@
         private System.Windows.Forms.Label lblRegistros;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dtgProfesor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IDPROFESOR;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NOMBRE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DNI;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FECHANACIMIENTO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TELEFONO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CELULAR;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DIRECCION;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FECHAREGISTRO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn USUARIOREGISTRO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FECHAULTMOD;
+        private System.Windows.Forms.DataGridViewTextBoxColumn USU_ULT_MOD;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ESTADO;
     }
 }

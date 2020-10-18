@@ -51,5 +51,13 @@ namespace ProyColegio_GUI
             cursoMan01.MdiParent = this;
             cursoMan01.Show();
         }
+        TimeSpan horaentrada = new TimeSpan();
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            this.Text = "Sistemas HighSchool da la hora " + DateTime.Now;
+
+            lblUsuario.Text = "Tiempo de sesion : " +
+                DateTime.Now.TimeOfDay.Subtract(horaentrada).ToString().Substring(0, 8);
+        }
     }
 }

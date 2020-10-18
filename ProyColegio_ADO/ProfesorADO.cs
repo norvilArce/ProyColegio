@@ -33,7 +33,7 @@ namespace ProyColegio_ADO
                 cmd.Parameters.AddWithValue("@vemail", objProfesorBE.EmailProfesor);
                 cmd.Parameters.AddWithValue("@vfec_nac", objProfesorBE.FecNacProfesor);
                 cmd.Parameters.AddWithValue("@vtel", objProfesorBE.TelProfesor);
-                cmd.Parameters.AddWithValue("@vcel", objProfesorBE.CelProfesor);
+                cmd.Parameters.AddWithValue("@cel", objProfesorBE.CelProfesor);
                 cmd.Parameters.AddWithValue("@vdir", objProfesorBE.DirProfesor);
                 cmd.Parameters.AddWithValue("@vid_ubigeo", objProfesorBE.Id_Ubigeo);
                 cmd.Parameters.AddWithValue("@vUsu_registro", objProfesorBE.Usu_Registro);
@@ -78,7 +78,7 @@ namespace ProyColegio_ADO
                 cmd.Parameters.AddWithValue("@vemail", objProfesorBE.EmailProfesor);
                 cmd.Parameters.AddWithValue("@vfec_nac", objProfesorBE.FecNacProfesor);
                 cmd.Parameters.AddWithValue("@vtel", objProfesorBE.TelProfesor);
-                cmd.Parameters.AddWithValue("@vcel", objProfesorBE.CelProfesor);
+                cmd.Parameters.AddWithValue("@cel", objProfesorBE.CelProfesor);
                 cmd.Parameters.AddWithValue("@vdir", objProfesorBE.DirProfesor);
                 cmd.Parameters.AddWithValue("@vid_ubigeo", objProfesorBE.Id_Ubigeo);
                 cmd.Parameters.AddWithValue("@vUsu_ult_mod", objProfesorBE.Usu_Ult_Mod);
