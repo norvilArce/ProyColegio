@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.lbl1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblUsuario = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lblHora = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.mantenimientosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.profesoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,29 +46,25 @@
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.lbl1,
-            this.lblUsuario});
+            this.lblUsuario,
+            this.lblHora});
             this.statusStrip1.Location = new System.Drawing.Point(0, 428);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(908, 22);
             this.statusStrip1.TabIndex = 5;
             this.statusStrip1.Text = "statusStrip1";
             // 
-            // lbl1
-            // 
-            this.lbl1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(50, 17);
-            this.lbl1.Text = "Usuario:";
-            // 
             // lblUsuario
             // 
-            this.lblUsuario.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lblUsuario.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(19, 17);
-            this.lblUsuario.Text = "....";
+            this.lblUsuario.Size = new System.Drawing.Size(53, 17);
+            this.lblUsuario.Text = "Usuario: ";
+            // 
+            // lblHora
+            // 
+            this.lblHora.Name = "lblHora";
+            this.lblHora.Size = new System.Drawing.Size(31, 17);
+            this.lblHora.Text = "hora";
             // 
             // menuStrip1
             // 
@@ -135,10 +131,11 @@
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MDIPrincipal";
-            this.Text = "Menu Principal - Esperancito HighSchool";
+            this.Text = "Menu Principal - Elite Way School";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MDIPrincipal_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MDIPrincipal_FormClosed);
+            this.Load += new System.EventHandler(this.MDIPrincipal_Load);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
@@ -151,8 +148,6 @@
         #endregion
 
         private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripStatusLabel lbl1;
-        private System.Windows.Forms.ToolStripStatusLabel lblUsuario;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem mantenimientosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem profesoresToolStripMenuItem;
@@ -160,5 +155,7 @@
         private System.Windows.Forms.ToolStripMenuItem cursosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem padresToolStripMenuItem;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ToolStripStatusLabel lblUsuario;
+        private System.Windows.Forms.ToolStripStatusLabel lblHora;
     }
 }
