@@ -173,6 +173,7 @@
             this.chkEstado.TabIndex = 13;
             this.chkEstado.Text = "Activo?";
             this.chkEstado.UseVisualStyleBackColor = true;
+            this.chkEstado.CheckStateChanged += new System.EventHandler(this.chkEstado_CheckStateChanged);
             // 
             // mskDni
             // 
@@ -199,6 +200,7 @@
             this.cboDepartamento.Name = "cboDepartamento";
             this.cboDepartamento.Size = new System.Drawing.Size(280, 21);
             this.cboDepartamento.TabIndex = 9;
+            this.cboDepartamento.SelectionChangeCommitted += new System.EventHandler(this.cboDepartamento_SelectionChangeCommitted);
             // 
             // cboProvincia
             // 
@@ -208,10 +210,12 @@
             this.cboProvincia.Name = "cboProvincia";
             this.cboProvincia.Size = new System.Drawing.Size(280, 21);
             this.cboProvincia.TabIndex = 10;
+            this.cboProvincia.SelectionChangeCommitted += new System.EventHandler(this.cboProvincia_SelectionChangeCommitted);
             // 
             // cboPeriodo
             // 
             this.cboPeriodo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboPeriodo.Enabled = false;
             this.cboPeriodo.FormattingEnabled = true;
             this.cboPeriodo.Location = new System.Drawing.Point(121, 329);
             this.cboPeriodo.Name = "cboPeriodo";
