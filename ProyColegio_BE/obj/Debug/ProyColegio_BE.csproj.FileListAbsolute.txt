@@ -3,3 +3,4 @@ C:\Users\Jean Pierre\Source\Repos\ProyColegio\ProyColegio_BE\bin\Debug\ProyColeg
 C:\Users\Jean Pierre\Source\Repos\ProyColegio\ProyColegio_BE\obj\Debug\ProyColegio_BE.csproj.CoreCompileInputs.cache
 C:\Users\Jean Pierre\Source\Repos\ProyColegio\ProyColegio_BE\obj\Debug\ProyColegio_BE.dll
 C:\Users\Jean Pierre\Source\Repos\ProyColegio\ProyColegio_BE\obj\Debug\ProyColegio_BE.pdb
+C:\Users\Jean Pierre\source\repos\ProyColegio\ProyColegio_BE\obj\Debug\ProyColegio_BE.csprojAssemblyReference.cache

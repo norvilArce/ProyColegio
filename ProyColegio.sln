@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.30413.136
+VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyColegio_ADO", "ProyColegio_ADO\ProyColegio_ADO.csproj", "{0E0D9690-B7B8-451D-BDF3-370CDF63B5B9}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyColegio_BL", "ProyColegio_BL\ProyColegio_BL.csproj", "{D01C92F2-C698-4612-A19F-7B95C4AD0686}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyColegio_GUI", "ProyColegio_GUI\ProyColegio_GUI.csproj", "{21440B75-DF73-4264-86BB-B3D11BB08C29}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SitioColegioWEB_GUI", "SitioColegioWEB_GUI\SitioColegioWEB_GUI.vbproj", "{75683D9D-4324-43F6-B050-62421C0A8DA5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{21440B75-DF73-4264-86BB-B3D11BB08C29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21440B75-DF73-4264-86BB-B3D11BB08C29}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21440B75-DF73-4264-86BB-B3D11BB08C29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75683D9D-4324-43F6-B050-62421C0A8DA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75683D9D-4324-43F6-B050-62421C0A8DA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75683D9D-4324-43F6-B050-62421C0A8DA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75683D9D-4324-43F6-B050-62421C0A8DA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
