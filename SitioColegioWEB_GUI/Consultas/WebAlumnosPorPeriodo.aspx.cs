@@ -12,25 +12,16 @@ namespace SitioColegioWEB_GUI.Consultas
     {
         AlumnoBL objAlumnoBL = new AlumnoBL();
         PeriodoBL objPeriodoBL = new PeriodoBL();
-<<<<<<< HEAD
 
-=======
->>>>>>> 29e8a1d90f2fd981d77ec49bd954f96136731fce
         protected void Page_Load(object sender, EventArgs e)
         {
             try
             {
                 if (Page.IsPostBack == false)
                 {
-<<<<<<< HEAD
                     cboPeriodo.DataSource = objPeriodoBL.ListarPeriodos();
                     cboPeriodo.DataValueField = "IDPERIODO";
                     cboPeriodo.DataTextField = "ANUAL";
-=======
-                    cboPeriodo.DataSource = cboPeriodo.ListarCliente();
-                    cboPeriodo.DataValueField = "";
-                    cboPeriodo.DataTextField = "";
->>>>>>> 29e8a1d90f2fd981d77ec49bd954f96136731fce
                     cboPeriodo.DataBind();
                 }
             }
@@ -44,11 +35,7 @@ namespace SitioColegioWEB_GUI.Consultas
         {
             try
             {
-<<<<<<< HEAD
                 grvAlumnos.DataSource = objAlumnoBL.ListarAlumnosPorPeriodo(int.Parse(cboPeriodo.SelectedValue));
-=======
-                grvAlumnos.DataSource = objAlumnoBL.ListarFacturasClienteFechas(cboPeriodo.SelectedValue.ToString());
->>>>>>> 29e8a1d90f2fd981d77ec49bd954f96136731fce
                 grvAlumnos.DataBind();
 
                 if (grvAlumnos.Rows.Count == 0)

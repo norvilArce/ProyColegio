@@ -77,14 +77,12 @@
   <ItemGroup>
     <Compile Include="Consultas\WebAlumnosPorPeriodo.aspx.cs">
       <DependentUpon>WebAlumnosPorPeriodo.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Consultas\WebAlumnosPorPeriodo.aspx.designer.cs">
       <DependentUpon>WebAlumnosPorPeriodo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Consultas\WebCursosProfesor.aspx.cs">
       <DependentUpon>WebCursosProfesor.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Consultas\WebCursosProfesor.aspx.designer.cs">
       <DependentUpon>WebCursosProfesor.aspx</DependentUpon>

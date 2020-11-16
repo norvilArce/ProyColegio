@@ -28,7 +28,7 @@
             <td class="auto-style2">&nbsp;</td>
             <td class="auto-style3">&nbsp;</td>
             <td>
-                <asp:Button ID="btnConsultar" runat="server" Text="Consultar" />
+                <asp:Button ID="btnConsultar" runat="server" Text="Consultar" OnClick="btnConsultar_Click" />
             </td>
         </tr>
         <tr>
@@ -40,7 +40,16 @@
         </tr>
         <tr>
             <td colspan="3">
-                <asp:GridView ID="grvNotas" runat="server" Width="450px">
+                <asp:GridView ID="grvNotas" runat="server" Width="450px" AutoGenerateColumns="False">
+                    <Columns>
+                        <asp:BoundField DataField="IDSALON" HeaderText="Salon" />
+                        <asp:BoundField DataField="Periodo" HeaderText="Periodo" />
+                        <asp:BoundField DataField="ARTE" HeaderText="Arte" />
+                        <asp:BoundField DataField="BIOLOGIA" HeaderText="Biologia" />
+                        <asp:BoundField DataField="GEOGRAFIA" HeaderText="Geografia" />
+                        <asp:BoundField DataField="FISICA" HeaderText="Fisica" />
+                        <asp:BoundField DataField="QUIMICA" HeaderText="Quimica" />
+                    </Columns>
                 </asp:GridView>
             </td>
         </tr>

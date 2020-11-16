@@ -9,3 +9,8 @@ C:\Users\Jean Pierre\Documents\aplicaciones 1\Proyecto Colegio\ProyColegio\ProyC
 C:\Users\Jean Pierre\Documents\aplicaciones 1\Proyecto Colegio\ProyColegio\ProyColegio_BE\obj\Debug\ProyColegio_BE.csproj.CoreCompileInputs.cache
 C:\Users\Jean Pierre\Documents\aplicaciones 1\Proyecto Colegio\ProyColegio\ProyColegio_BE\obj\Debug\ProyColegio_BE.dll
 C:\Users\Jean Pierre\Documents\aplicaciones 1\Proyecto Colegio\ProyColegio\ProyColegio_BE\obj\Debug\ProyColegio_BE.pdb
+D:\ISIL\DESARROLLO DE SOFTWARE\3er ciclo\Desarrollo de Aplicaciones I\proyecto\repo\ProyColegio\ProyColegio_BE\bin\Debug\ProyColegio_BE.dll
+D:\ISIL\DESARROLLO DE SOFTWARE\3er ciclo\Desarrollo de Aplicaciones I\proyecto\repo\ProyColegio\ProyColegio_BE\bin\Debug\ProyColegio_BE.pdb
+D:\ISIL\DESARROLLO DE SOFTWARE\3er ciclo\Desarrollo de Aplicaciones I\proyecto\repo\ProyColegio\ProyColegio_BE\obj\Debug\ProyColegio_BE.csproj.CoreCompileInputs.cache
+D:\ISIL\DESARROLLO DE SOFTWARE\3er ciclo\Desarrollo de Aplicaciones I\proyecto\repo\ProyColegio\ProyColegio_BE\obj\Debug\ProyColegio_BE.dll
+D:\ISIL\DESARROLLO DE SOFTWARE\3er ciclo\Desarrollo de Aplicaciones I\proyecto\repo\ProyColegio\ProyColegio_BE\obj\Debug\ProyColegio_BE.pdb

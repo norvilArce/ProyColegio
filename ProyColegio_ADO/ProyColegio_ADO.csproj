@@ -42,14 +42,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ProfesorADO.cs" />
     <Compile Include="AlumnoADO.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="ConexionADO.cs" />
     <Compile Include="CursoADO.cs" />
     <Compile Include="PadreADO.cs" />
     <Compile Include="PeriodoADO.cs" />
+    <Compile Include="ProfesorADO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SalonADO.cs" />
     <Compile Include="UbigeoADO.cs" />
     <Compile Include="UsuarioADO.cs" />
   </ItemGroup>
