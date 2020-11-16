@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyColegio_BL", "ProyColeg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyColegio_GUI", "ProyColegio_GUI\ProyColegio_GUI.csproj", "{21440B75-DF73-4264-86BB-B3D11BB08C29}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SitioColegioWEB_GUI", "SitioColegioWEB_GUI\SitioColegioWEB_GUI.csproj", "{864D73BA-1B82-46F9-968D-9324D552278F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{21440B75-DF73-4264-86BB-B3D11BB08C29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21440B75-DF73-4264-86BB-B3D11BB08C29}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21440B75-DF73-4264-86BB-B3D11BB08C29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{864D73BA-1B82-46F9-968D-9324D552278F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{864D73BA-1B82-46F9-968D-9324D552278F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{864D73BA-1B82-46F9-968D-9324D552278F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{864D73BA-1B82-46F9-968D-9324D552278F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
