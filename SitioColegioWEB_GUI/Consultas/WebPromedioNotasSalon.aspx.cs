@@ -9,9 +9,7 @@ using ProyColegio_BL;
 namespace SitioColegioWEB_GUI.Consultas
 {
     public partial class WebPromedioNotasSalon : System.Web.UI.Page
-    {
-        AlumnoBL objAlumnoBL = new AlumnoBL();
-        PeriodoBL objPeriodoBL = new PeriodoBL();
+    {        
         SalonBL objSalonBL = new SalonBL();
 
         protected void Page_Load(object sender, EventArgs e)

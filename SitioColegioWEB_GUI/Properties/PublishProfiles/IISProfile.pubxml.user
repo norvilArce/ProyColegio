@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo se usa en el proceso de publicación y empaquetado del proyecto web. Para personalizar el comportamiento de este proceso,
+edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 para obtener más información. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>http://localhost/Colegio</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/ProyColegio_ADO.dll">
+      <publishTime>11/16/2020 17:38:24</publishTime>
+    </File>
+    <File Include="bin/ProyColegio_ADO.pdb">
+      <publishTime>11/16/2020 17:38:24</publishTime>
+    </File>
+    <File Include="bin/ProyColegio_BE.dll">
+      <publishTime>11/16/2020 17:38:24</publishTime>
+    </File>
+    <File Include="bin/ProyColegio_BE.pdb">
+      <publishTime>11/16/2020 17:38:24</publishTime>
+    </File>
+    <File Include="bin/ProyColegio_BL.dll">
+      <publishTime>11/16/2020 17:38:25</publishTime>
+    </File>
+    <File Include="bin/ProyColegio_BL.pdb">
+      <publishTime>11/16/2020 17:38:25</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Win32.Primitives.dll">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Globalization.Calendars.dll">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.ZipFile.dll">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Net.Http.dll">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Net.Sockets.dll">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Runtime.InteropServices.RuntimeInformation.dll">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Threading.Tasks.Extensions.dll">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>11/16/2020 00:27:40</publishTime>
+    </File>
+    <File Include="bin/SitioColegioWEB_GUI.dll">
+      <publishTime>11/16/2020 17:39:13</publishTime>
+    </File>
+    <File Include="bin/SitioColegioWEB_GUI.pdb">
+      <publishTime>11/16/2020 17:39:13</publishTime>
+    </File>
+    <File Include="Consultas/WebAlumnosPorPeriodo.aspx">
+      <publishTime>11/16/2020 17:29:28</publishTime>
+    </File>
+    <File Include="Consultas/WebCursosProfesor.aspx">
+      <publishTime>11/16/2020 14:59:23</publishTime>
+    </File>
+    <File Include="Consultas/WebNotasAlumnos.aspx">
+      <publishTime>11/16/2020 15:06:00</publishTime>
+    </File>
+    <File Include="Consultas/WebPromedioNotasSalon.aspx">
+      <publishTime>11/16/2020 17:13:49</publishTime>
+    </File>
+    <File Include="CSS/DemoCSS.css">
+      <publishTime>11/16/2020 01:16:29</publishTime>
+    </File>
+    <File Include="DemoMaster.master">
+      <publishTime>11/16/2020 15:06:00</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>11/16/2020 17:39:14</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

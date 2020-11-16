@@ -42,13 +42,17 @@
             <td colspan="3">
                 <asp:GridView ID="grvNotas" runat="server" Width="450px" AutoGenerateColumns="False">
                     <Columns>
-                        <asp:BoundField DataField="IDSALON" HeaderText="Salon" />
+                        <asp:BoundField DataField="Salon" HeaderText="Salon" />
                         <asp:BoundField DataField="Periodo" HeaderText="Periodo" />
                         <asp:BoundField DataField="ARTE" HeaderText="Arte" />
                         <asp:BoundField DataField="BIOLOGIA" HeaderText="Biologia" />
                         <asp:BoundField DataField="GEOGRAFIA" HeaderText="Geografia" />
                         <asp:BoundField DataField="FISICA" HeaderText="Fisica" />
                         <asp:BoundField DataField="QUIMICA" HeaderText="Quimica" />
+                        <asp:BoundField DataField="INGLES" HeaderText="Ingles" />
+                        <asp:BoundField DataField="HISTORIA" HeaderText="Historia" />
+                        <asp:BoundField DataField="ALGEBRA" HeaderText="Algebra" />
+                        <asp:BoundField DataField="GEOMETRIA" HeaderText="Geometria" />
                     </Columns>
                 </asp:GridView>
             </td>
