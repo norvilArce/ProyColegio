@@ -245,5 +245,24 @@ namespace ProyColegio_ADO
             }
         }
 
+        public DataTable ListarCursosPorProfesor(int idProfesor) {
+
+            DataSet dts = new DataSet();
+            cnx.ConnectionString = MiConexion.GetCnx();
+            cmd.Connection = cnx;
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = "usp_ListarCursosPorProfesor";
+            try {
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@vidProfesor", idProfesor);
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+                sqlDataAdapter.Fill(dts, "CursosProfesor");
+
+                return dts.Tables["CursosProfesor"];
+            }
+            catch (SqlException ex) {
+                throw new Exception(ex.Message);
+            }
+        }
     }
 }

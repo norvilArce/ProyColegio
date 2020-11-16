@@ -43,5 +43,9 @@ namespace ProyColegio_BL
             return objProfesorADO.contarProfesores();
         }
 
+        public DataTable ListarCursosPorProfesor(int idProfesor) {
+            return objProfesorADO.ListarCursosPorProfesor(idProfesor);
+        }
+
     }
 }

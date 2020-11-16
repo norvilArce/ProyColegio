@@ -246,5 +246,25 @@ namespace ProyColegio_ADO
             }
         }
 
+        public DataTable ListarAlumnosPorPeriodo(int idPeriodo) {
+            DataSet dts = new DataSet();
+            cnx.ConnectionString = MiConexion.GetCnx();
+            cmd.Connection = cnx;
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = "usp_AlumnosPorPeriodo";
+            try {
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@vidPeriodo", idPeriodo);
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+                sqlDataAdapter.Fill(dts, "AlumnosPeriodo");
+
+                return dts.Tables["AlumnosPeriodo"];
+            }
+            catch (SqlException ex) {
+                throw new Exception(ex.Message);
+            }
+            return dts.Tables["AlumnosPeriodo"];
+        }
+
     }
 }

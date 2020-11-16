@@ -43,5 +43,9 @@ namespace ProyColegio_BL
             return objAlumnoADO.contarAlumnos();
         }
 
+        public DataTable ListarAlumnosPorPeriodo(int idPeriodo) {
+            return objAlumnoADO.ListarAlumnosPorPeriodo(idPeriodo);
+        }
+
     }
 }
