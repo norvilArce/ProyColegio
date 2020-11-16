@@ -56,7 +56,7 @@ namespace ProyColegio_GUI
         
         private void timer1_Tick(object sender, EventArgs e)
         {
-            this.Text = "Menu Principal - Elite Way School - " + DateTime.Now.ToString();
+            this.Text = "Menu Principal - Sistema de colegio - " + DateTime.Now.ToString();
             lblHora.Text = "Tiempo de sesion : " + DateTime.Now.Subtract(horaentrada).ToString().Substring(0,8);
         }
 
