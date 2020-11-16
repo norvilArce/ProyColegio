@@ -37,7 +37,11 @@
         <tr>
             <td class="labelContenido">Seleccione el Periodo</td>
             <td class="auto-style7">
+<<<<<<< HEAD
                 <asp:DropDownList ID="cboPeriodo" runat="server" CssClass="DropDownList" Width="250px">
+=======
+                <asp:DropDownList ID="cboPeriodo" runat="server" CssClass="DropDownList" Width="160px">
+>>>>>>> 29e8a1d90f2fd981d77ec49bd954f96136731fce
                 </asp:DropDownList>
             </td>
             <td class="auto-style6"></td>
@@ -58,6 +62,7 @@
         </tr>
         <tr>
             <td colspan="3">
+<<<<<<< HEAD
                 <asp:GridView ID="grvAlumnos" runat="server" Width="550px" AutoGenerateColumns="False">
                     <Columns>
                         <asp:BoundField DataField="IDALUMNO" HeaderText="Id" />
@@ -70,6 +75,9 @@
                         <asp:BoundField DataField="TELEFONO" HeaderText="Telefono" />
                         <asp:BoundField DataField="DIRECCION" HeaderText="Direccion" />
                     </Columns>
+=======
+                <asp:GridView ID="grvAlumnos" runat="server" Width="550px">
+>>>>>>> 29e8a1d90f2fd981d77ec49bd954f96136731fce
                 </asp:GridView>
             </td>
         </tr>
