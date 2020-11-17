@@ -15,8 +15,7 @@ namespace SitioColegioWEB_GUI.Consultas
         protected void Page_Load(object sender, EventArgs e)
         {
             try
-            {
-                //solo cuando seala primera vez que se cargue
+            {                
                 if (!Page.IsPostBack)
                 {
                     cboSalon.DataSource = objSalonBL.ListarSalon();

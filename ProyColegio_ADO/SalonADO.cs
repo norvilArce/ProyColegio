@@ -57,8 +57,7 @@ namespace ProyColegio_ADO
             {
                 throw new Exception(ex.Message);
             }
+
         }
-
-
     }
 }

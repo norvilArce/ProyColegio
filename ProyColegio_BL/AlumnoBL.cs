@@ -47,5 +47,10 @@ namespace ProyColegio_BL
             return objAlumnoADO.ListarAlumnosPorPeriodo(idPeriodo);
         }
 
+        public DataTable ListarNotasAlumnoPorCurso(int idAlumno, int idPeriodo, int idCurso)
+        {
+            return objAlumnoADO.ListarNotasAlumnoPorCurso(idAlumno, idPeriodo, idCurso);
+        }
+
     }
 }

@@ -266,5 +266,30 @@ namespace ProyColegio_ADO
             return dts.Tables["AlumnosPeriodo"];
         }
 
+        public DataTable ListarNotasAlumnoPorCurso(int idAlumno, int idPeriodo, int idCurso)
+        {
+            DataSet dts = new DataSet();
+            cnx.ConnectionString = MiConexion.GetCnx();
+            cmd.Connection = cnx;
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = "usp_NotasAlumnoPorCurso";
+            try
+            {
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@vid_alum", idAlumno);
+                cmd.Parameters.AddWithValue("@vid_per", idPeriodo);
+                cmd.Parameters.AddWithValue("@vid_cur", idCurso);
+                SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
+                sqlDataAdapter.Fill(dts, "NotasAlumnos");
+
+                return dts.Tables["NotasAlumnos"];
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return dts.Tables["NotasAlumnos"];
+        }
+
     }
 }
