@@ -13,22 +13,11 @@
         .auto-style4 {
             height: 131px;
         }
-        .auto-style5 {
-            width: 278px;
-            height: 26px;
-        }
-        .auto-style6 {
-            width: 236px;
-            height: 26px;
-        }
-        .auto-style7 {
-            height: 26px;
-        }
-    </style>
+        </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p>
-        CONSULTA PARA VER NOTAS DE CADA ALUMNO</p>
+        CONSULTAR PROMEDIO DE NOTAS DE CADA ALUMNO</p>
     <table class="auto-style1">
         <tr>
             <td class="auto-style2">Seleccione Alumno:</td>
@@ -45,14 +34,6 @@
                 </asp:DropDownList>
             </td>
             <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style5">Seleccione Curso:</td>
-            <td class="auto-style6">
-                <asp:DropDownList ID="cboCurso" runat="server" Width="150px">
-                </asp:DropDownList>
-            </td>
-            <td class="auto-style7"></td>
         </tr>
         <tr>
             <td class="auto-style2">&nbsp;</td>
@@ -75,8 +56,7 @@
                     <Columns>
                         <asp:BoundField DataField="IDALUMNO" HeaderText="IdAlumno" />
                         <asp:BoundField DataField="NOMBRECURSO" HeaderText="Curso" />
-                        <asp:BoundField DataField="NOTA" HeaderText="Nota" />
-                        <asp:BoundField DataField="FECHA" HeaderText="Fecha" />
+                        <asp:BoundField DataField="PROMEDIO" HeaderText="Promedio" />
                     </Columns>
                     <FooterStyle BackColor="#CCCC99" />
                     <HeaderStyle BackColor="#6B696B" Font-Bold="True" ForeColor="White" />

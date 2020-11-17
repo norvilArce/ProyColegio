@@ -266,7 +266,7 @@ namespace ProyColegio_ADO
             return dts.Tables["AlumnosPeriodo"];
         }
 
-        public DataTable ListarNotasAlumnoPorCurso(int idAlumno, int idPeriodo, int idCurso)
+        public DataTable ListarNotasAlumnoPorCurso(int idAlumno, int idPeriodo)
         {
             DataSet dts = new DataSet();
             cnx.ConnectionString = MiConexion.GetCnx();
@@ -278,7 +278,6 @@ namespace ProyColegio_ADO
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@vid_alum", idAlumno);
                 cmd.Parameters.AddWithValue("@vid_per", idPeriodo);
-                cmd.Parameters.AddWithValue("@vid_cur", idCurso);
                 SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(cmd);
                 sqlDataAdapter.Fill(dts, "NotasAlumnos");
 

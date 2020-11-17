@@ -29,11 +29,6 @@ namespace SitioColegioWEB_GUI.Consultas
                     cboPeriodo.DataValueField = "IDPERIODO";
                     cboPeriodo.DataTextField = "ANUAL";
                     cboPeriodo.DataBind();
-
-                    cboCurso.DataSource = objCursoBL.ListarCurso();
-                    cboCurso.DataValueField = "IDCURSO";
-                    cboCurso.DataTextField = "NOMBRECURSO";
-                    cboCurso.DataBind();
                 }
             }
             catch (Exception ex)
@@ -47,8 +42,7 @@ namespace SitioColegioWEB_GUI.Consultas
             try
             {
                 grvNotas.DataSource = objAlumnoBL.ListarNotasAlumnoPorCurso(Convert.ToInt16(cboAlumno.SelectedValue),
-                    Convert.ToInt16(cboPeriodo.SelectedValue),
-                    Convert.ToInt16(cboCurso.SelectedValue));
+                    Convert.ToInt16(cboPeriodo.SelectedValue));
 
                 grvNotas.DataBind();
 
