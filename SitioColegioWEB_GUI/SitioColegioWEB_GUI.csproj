@@ -67,16 +67,35 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Consultas\Consultas.aspx" />
     <Content Include="Consultas\WebAlumnosPorPeriodo.aspx" />
     <Content Include="Consultas\WebCursosProfesor.aspx" />
     <Content Include="Consultas\WebNotasAlumnos.aspx" />
     <Content Include="Consultas\WebPromedioNotasSalon.aspx" />
+    <Content Include="CSS\bootstrap.min.css" />
     <Content Include="CSS\DemoCSS.css" />
+    <Content Include="CSS\owl.carousel.css" />
+    <Content Include="CSS\style.css" />
+    <Content Include="images\as.jpg" />
+    <Content Include="images\edu.jpg" />
+    <Content Include="images\menu.png" />
+    <Content Include="images\pa.jpg" />
+    <Content Include="Mantenimientos\Mantenimientos.aspx" />
     <Content Include="Mantenimientos\WebMantAlumno.aspx" />
+    <Content Include="MenuPrincipal.aspx" />
     <Content Include="Transacciones\RegistrarMatricula.aspx" />
     <Content Include="Web.config" />
+    <Content Include="WebLogin.aspx" />
+    <Content Include="WebLogout.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Consultas\Consultas.aspx.cs">
+      <DependentUpon>Consultas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\Consultas.aspx.designer.cs">
+      <DependentUpon>Consultas.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Consultas\WebAlumnosPorPeriodo.aspx.cs">
       <DependentUpon>WebAlumnosPorPeriodo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -109,12 +128,26 @@
       <DependentUpon>DemoMaster.master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Mantenimientos\Mantenimientos.aspx.cs">
+      <DependentUpon>Mantenimientos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Mantenimientos.aspx.designer.cs">
+      <DependentUpon>Mantenimientos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Mantenimientos\WebMantAlumno.aspx.cs">
       <DependentUpon>WebMantAlumno.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Mantenimientos\WebMantAlumno.aspx.designer.cs">
       <DependentUpon>WebMantAlumno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipal.aspx.cs">
+      <DependentUpon>MenuPrincipal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.aspx.designer.cs">
+      <DependentUpon>MenuPrincipal.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Transacciones\RegistrarMatricula.aspx.cs">
@@ -123,6 +156,20 @@
     </Compile>
     <Compile Include="Transacciones\RegistrarMatricula.aspx.designer.cs">
       <DependentUpon>RegistrarMatricula.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebLogin.aspx.cs">
+      <DependentUpon>WebLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebLogin.aspx.designer.cs">
+      <DependentUpon>WebLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebLogout.aspx.cs">
+      <DependentUpon>WebLogout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebLogout.aspx.designer.cs">
+      <DependentUpon>WebLogout.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
