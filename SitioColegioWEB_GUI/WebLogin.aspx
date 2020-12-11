@@ -28,7 +28,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <table class="auto-style1" style="background-color: #FFFFCC">
+        <table class="auto-style1" style="background-color: #FFA833">
             <tr>
                 <td class="auto-style2" rowspan="8">
                     <asp:Image ID="Image1" runat="server" Height="235px" Width="340px" ImageUrl="~/images/as.jpg" />

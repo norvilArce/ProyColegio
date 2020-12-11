@@ -77,7 +77,9 @@
     <Content Include="CSS\owl.carousel.css" />
     <Content Include="CSS\style.css" />
     <Content Include="images\as.jpg" />
+    <Content Include="images\asd.jpg" />
     <Content Include="images\edu.jpg" />
+    <Content Include="images\man.png" />
     <Content Include="images\menu.png" />
     <Content Include="images\pa.jpg" />
     <Content Include="Mantenimientos\Mantenimientos.aspx" />
