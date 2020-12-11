@@ -1,4 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/DemoMaster.master" AutoEventWireup="true" CodeBehind="RegistrarMatricula.aspx.cs" Inherits="SitioColegioWEB_GUI.Transacciones.RegistrarMatricula" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style1 {
@@ -21,11 +23,31 @@
             height: 22px;
             width: 261px;
         }
+        .auto-style7 {
+            font-weight: bold;
+            font-size: larger;
+            color: white;
+        }
+        .auto-style8 {
+            height: 22px;
+            width: 215px;
+        }
+        .auto-style9 {
+            width: 260px;
+        }
+        .auto-style10 {
+            width: 215px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <p>
-        REGISTRAR MATRICULA</p>
+    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+
+        <ContentTemplate>
+
+
+    <p>REGISTRAR MATRICULA</p>
+    
     <table class="auto-style1">
         <tr>
             <td class="auto-style3">Alumno:</td>
@@ -86,7 +108,13 @@
         <tr>
             <td colspan="3">
                 <br />
-                <asp:GridView ID="GridView1" runat="server" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal" Width="742px">
+                <asp:GridView ID="grDetalles" runat="server" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal" Width="742px" AutoGenerateColumns="False">
+                    <Columns>
+                        <asp:ButtonField ButtonType="Image" CommandName="Eliminar" ImageUrl="~/Images/Borrar.png" Text="Eliminar" />
+                        <asp:BoundField HeaderText="Codigo Curso" />
+                        <asp:BoundField HeaderText="Nombre Curso" />
+                        <asp:BoundField HeaderText="Profesor" />
+                    </Columns>
                     <FooterStyle BackColor="White" ForeColor="#333333" />
                     <HeaderStyle BackColor="#336666" Font-Bold="True" ForeColor="White" />
                     <PagerStyle BackColor="#336666" ForeColor="White" HorizontalAlign="Center" />
@@ -118,10 +146,91 @@
         </tr>
     </table>
 
-    <asp:LinkButton ID="LinkButton1" runat="server">LinkButton</asp:LinkButton>
+    <asp:LinkButton ID="btnPopupDetalle" runat="server"/>
+    <ajaxToolkit:ModalPopupExtender ID="ModalPopupExtender1" runat="server" BackgroundCssClass="FondoAplicacion"  
+        TargetControlID="btnPopupDetalle" PopupControlID="PanelDetalle">
+    </ajaxToolkit:ModalPopupExtender>
+    <asp:Panel ID="PanelDetalle" runat="server" CssClass="auto-style19" align="center" Style="display:table" Width="543px">
+          
+            <table style="border: Solid 3px #D55500;"
+                cellpadding="0" cellspacing="0" >
+                <tr style="background-color: darkred">
+                    <td colspan="2" style="height: 10%; "
+                        align="center" class="auto-style7">
+                        Elegir Profesor</td>
+                </tr>
+                <tr>
+                    <td align="right" class="auto-style5">
+                        </td>
+                      <td align="left" class="auto-style8">
+                          </td>
+                </tr>
+                <tr>
+                    <td align="right" class="auto-style17">Seleccione Profesor:</td>
+                    <td align="left" class="auto-style10">
+                        <asp:DropDownList ID="cboProducto" runat="server"  Width="192px" CssClass="DropDownList">
+                        </asp:DropDownList>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="auto-style9">
+                        <asp:Label ID="lblMensajeDetalle" runat="server" CssClass="labelErrores" Width="400px"></asp:Label>
+                    </td>
+                </tr>
+               
+                     <tr>
+                         <td class="auto-style26">
+                             </td>
+                         <td class="auto-style10">
+                             </td>
+                </tr>
+              
+                <tr>
+                    <td class="auto-style22">
+                        <asp:Button ID="btnGrabarDetalle" runat="server" OnClick="btnGrabarDetalle_Click" Text="Grabar" Width="100px" CssClass="boton2" />
+                    </td>
+                    <td class="auto-style10">
+                        <asp:Button ID="btnCancelarDetalle" runat="server" Text="Cancelar" Width="100px" CssClass="boton-new" />
+                    </td>
+                </tr>
+              
+                <tr>
+                    <td class="auto-style27"></td>
+                    <td class="auto-style10"></td>
+                </tr>
+              
+            </table>
+                        
+        </asp:Panel>
+
+    <asp:LinkButton ID="lnkMensaje" runat="server"/>
+            <ajaxToolkit:ModalPopupExtender ID="mpeMensaje" runat="server" TargetControlID="lnkMensaje" 
+                    PopupControlID="pnlMensaje" BackgroundCssClass="FondoAplicacion" OkControlID="btnAceptar" 
+                     />
+<asp:Panel ID="pnlMensaje" runat="server" CssClass="CajaDialogo" Style="display: normal;" Width="500"> 
+                    <table border="0" width="500px" style="margin: 0px; padding: 0px; background-color:darkred ; 
+                        color: #FFFFFF;"> 
+                        <tr> 
+                            <td align="center" class="auto-style11" > 
+                                <asp:Label ID="lblTitulo" runat="server" Text="Mensaje" /> 
+                            </td> 
+                            <td width="12%" class="auto-style11"> 
+                                <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/Images/Cancelar.png" Style="vertical-align: top;" 
+                                    ImageAlign="Right" /> 
+                            </td> 
+                        </tr> 
+                         
+                    </table> 
+                    <div> 
+                        <asp:Label ID="lblMensaje" runat="server" ForeColor ="Black" /> 
+                    </div> 
+                    <div> 
+                        <asp:Button ID="btnAceptar" runat="server" Text="Aceptar" CssClass="boton-new" /> 
+                    </div> 
+                </asp:Panel> 
 
 
-
-
-
+                    </ContentTemplate>
+    </asp:UpdatePanel>
+    
 </asp:Content>
