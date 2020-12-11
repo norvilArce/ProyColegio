@@ -81,10 +81,15 @@
     <Content Include="CSS\owl.carousel.css" />
     <Content Include="CSS\style.css" />
     <Content Include="images\as.jpg" />
+<<<<<<< HEAD
     <Content Include="images\Borrar.png" />
     <Content Include="images\Buscar.png" />
     <Content Include="images\Editar.png" />
+=======
+    <Content Include="images\asd.jpg" />
+>>>>>>> b935e10902d40f978ad4b86796d1986d14b118f3
     <Content Include="images\edu.jpg" />
+    <Content Include="images\man.png" />
     <Content Include="images\menu.png" />
     <Content Include="images\pa.jpg" />
     <Content Include="Mantenimientos\Mantenimientos.aspx" />
