@@ -7,11 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+
 namespace SitioColegioWEB_GUI.Mantenimientos
 {
-
-
-    public partial class WebMantProfesor
+    public partial class Mantenimientos
     {
     }
 }

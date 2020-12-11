@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace SitioColegioWEB_GUI.Mantenimientos
 {
-    public partial class WebMantProfesor : System.Web.UI.Page
+    public partial class Mantenimientos : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

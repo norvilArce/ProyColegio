@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace SitioColegioWEB_GUI.Mantenimientos
+namespace SitioVentasWEB_GUI
 {
-    public partial class WebMantCurso : System.Web.UI.Page
+    public partial class MenuPrincipal : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

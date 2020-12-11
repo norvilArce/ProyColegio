@@ -18,6 +18,7 @@ namespace ProyColegio_BE
         private DateTime mvar_fecUltMod;
         private int mvar_estado;
         private DataTable Detalles;
+        private short mvaridmatricula;
 
         public Int16 idMatricula
         {

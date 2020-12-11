@@ -129,7 +129,6 @@ namespace SitioColegioWEB_GUI.Transacciones
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::AjaxControlToolkit.ModalPopupExtender ModalPopupExtender1;
 
         /// <summary>
         /// Control PanelDetalle.
@@ -192,7 +191,6 @@ namespace SitioColegioWEB_GUI.Transacciones
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::AjaxControlToolkit.ModalPopupExtender mpeMensaje;
 
         /// <summary>
         /// Control pnlMensaje.
