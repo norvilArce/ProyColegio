@@ -43,6 +43,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=19.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Norvil\Documents\ASP.NET AJAX Control Toolkit\Bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -72,7 +76,67 @@
     <Content Include="Consultas\WebNotasAlumnos.aspx" />
     <Content Include="Consultas\WebPromedioNotasSalon.aspx" />
     <Content Include="CSS\DemoCSS.css" />
+    <Content Include="Images\1.jpg" />
+    <Content Include="Images\2.jpg" />
+    <Content Include="Images\accent.png" />
+    <Content Include="Images\Aceptar.png" />
+    <Content Include="Images\Agregar.png" />
+    <Content Include="Images\book_blue.png" />
+    <Content Include="Images\Borrar.png" />
+    <Content Include="Images\bullet.png" />
+    <Content Include="Images\Buscar.png" />
+    <Content Include="Images\cabinet.png" />
+    <Content Include="Images\Calc.png" />
+    <Content Include="Images\calculator.png" />
+    <Content Include="Images\Cancelar.png" />
+    <Content Include="Images\Consultas.jpg" />
+    <Content Include="Images\Control_Panel.png" />
+    <Content Include="Images\DaleU.jpg" />
+    <Content Include="Images\docOC.png" />
+    <Content Include="Images\docRD.png" />
+    <Content Include="Images\docRM.png" />
+    <Content Include="Images\docRP.png" />
+    <Content Include="Images\document_attachment.png" />
+    <Content Include="Images\document_certificate.png" />
+    <Content Include="Images\document_dirty.png" />
+    <Content Include="Images\document_lock.png" />
+    <Content Include="Images\Editar.png" />
+    <Content Include="Images\Estetoscopio.JPG" />
+    <Content Include="Images\fondo.jpg" />
+    <Content Include="Images\heroAccent.png" />
+    <Content Include="Images\indicator.gif" />
+    <Content Include="Images\InicioSesion.jpg" />
+    <Content Include="Images\loading.gif" />
+    <Content Include="Images\loading2.gif" />
+    <Content Include="Images\Logout.jpg" />
+    <Content Include="Images\Mantenimientos.jpg" />
+    <Content Include="Images\money.png" />
+    <Content Include="Images\moneybag.png" />
+    <Content Include="Images\note_new.png" />
+    <Content Include="Images\orderedList0.png" />
+    <Content Include="Images\orderedList1.png" />
+    <Content Include="Images\orderedList2.png" />
+    <Content Include="Images\orderedList3.png" />
+    <Content Include="Images\orderedList4.png" />
+    <Content Include="Images\orderedList5.png" />
+    <Content Include="Images\orderedList6.png" />
+    <Content Include="Images\orderedList7.png" />
+    <Content Include="Images\orderedList8.png" />
+    <Content Include="Images\orderedList9.png" />
+    <Content Include="Images\p1.jpg" />
+    <Content Include="Images\p2.jpg" />
+    <Content Include="Images\p3.jpg" />
+    <Content Include="Images\p4.jpg" />
+    <Content Include="Images\p5.jpg" />
+    <Content Include="Images\p6.jpg" />
+    <Content Include="Images\p7.jpg" />
+    <Content Include="Images\Peru.png" />
+    <Content Include="Images\Testeo1.jpg" />
+    <Content Include="Images\Transacciones.jpg" />
+    <Content Include="Images\Ventas.jpg" />
     <Content Include="Mantenimientos\WebMantAlumno.aspx" />
+    <Content Include="Mantenimientos\WebMantCurso.aspx" />
+    <Content Include="Mantenimientos\WebMantProfesor.aspx" />
     <Content Include="Transacciones\RegistrarMatricula.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -115,6 +179,20 @@
     </Compile>
     <Compile Include="Mantenimientos\WebMantAlumno.aspx.designer.cs">
       <DependentUpon>WebMantAlumno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\WebMantCurso.aspx.cs">
+      <DependentUpon>WebMantCurso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\WebMantCurso.aspx.designer.cs">
+      <DependentUpon>WebMantCurso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\WebMantProfesor.aspx.cs">
+      <DependentUpon>WebMantProfesor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\WebMantProfesor.aspx.designer.cs">
+      <DependentUpon>WebMantProfesor.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Transacciones\RegistrarMatricula.aspx.cs">
