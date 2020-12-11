@@ -46,6 +46,7 @@
     <Compile Include="Class1.cs" />
     <Compile Include="ConexionADO.cs" />
     <Compile Include="CursoADO.cs" />
+    <Compile Include="CursoProfesorADO.cs" />
     <Compile Include="MatriculaADO.cs" />
     <Compile Include="PadreADO.cs" />
     <Compile Include="PeriodoADO.cs" />

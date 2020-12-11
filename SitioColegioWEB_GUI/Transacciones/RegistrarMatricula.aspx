@@ -38,6 +38,9 @@
         .auto-style10 {
             width: 215px;
         }
+        .auto-style11 {
+            margin-left: 0;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -52,7 +55,7 @@
         <tr>
             <td class="auto-style3">Alumno:</td>
             <td class="auto-style5">
-                <asp:DropDownList ID="DropDownList5" runat="server" Height="23px" Width="249px">
+                <asp:DropDownList ID="cboAlumno" runat="server" Height="23px" Width="550px">
                 </asp:DropDownList>
             </td>
             <td>&nbsp;</td>
@@ -60,7 +63,8 @@
         <tr>
             <td class="auto-style3">Seleccione Periodo:</td>
             <td class="auto-style5">
-                <asp:DropDownList ID="DropDownList1" runat="server" Height="17px" Width="225px">
+                <asp:DropDownList ID="cboPeriodo" runat="server" Height="26px" Width="225px">
+                    <asp:ListItem Value="1">2020</asp:ListItem>
                 </asp:DropDownList>
             </td>
             <td>&nbsp;</td>
@@ -68,7 +72,10 @@
         <tr>
             <td class="auto-style3">Cantidad de Cursos:</td>
             <td class="auto-style5">
-                <asp:DropDownList ID="DropDownList4" runat="server" Height="16px" Width="74px">
+                <asp:DropDownList ID="cboCantCursos" runat="server" Height="26px" Width="74px">
+                    <asp:ListItem>6</asp:ListItem>
+                    <asp:ListItem>8</asp:ListItem>
+                    <asp:ListItem>10</asp:ListItem>
                 </asp:DropDownList>
             </td>
             <td>&nbsp;</td>
@@ -76,7 +83,12 @@
         <tr>
             <td class="auto-style3">Seleccione Grado:</td>
             <td class="auto-style5">
-                <asp:DropDownList ID="DropDownList2" runat="server" Height="16px" Width="114px">
+                <asp:DropDownList ID="cboGrado" runat="server" Height="26px" Width="114px">
+                    <asp:ListItem>1</asp:ListItem>
+                    <asp:ListItem>2</asp:ListItem>
+                    <asp:ListItem>3</asp:ListItem>
+                    <asp:ListItem>4</asp:ListItem>
+                    <asp:ListItem>5</asp:ListItem>
                 </asp:DropDownList>
             </td>
             <td>&nbsp;</td>
@@ -84,7 +96,7 @@
         <tr>
             <td class="auto-style3">Seleccione Cursos:</td>
             <td class="auto-style5">
-                <asp:DropDownList ID="DropDownList3" runat="server" Height="16px" Width="140px">
+                <asp:DropDownList ID="cboCursos" runat="server" Height="26px" Width="550px">
                 </asp:DropDownList>
             </td>
             <td>&nbsp;</td>
@@ -96,24 +108,23 @@
         </tr>
         <tr>
             <td class="auto-style3">
-                <asp:Button ID="Button1" runat="server" Text="Elegir profesor" />
+                <!--<asp:Button ID="Button1" runat="server" Text="Elegir profesor" />-->
             </td>
             <td class="auto-style5">
-                <asp:Button ID="Button2" runat="server" Text="Grabar" />
+                <asp:Button ID="btnAgregar" runat="server" Text="Agregar" OnClick="btnAgregar_Click" />
             </td>
             <td>
-                <asp:Button ID="Button3" runat="server" Text="Cancelar" />
+                <asp:Button ID="Button3" runat="server" Text="Cancelar" PostBackUrl="~/MenuPrincipal.aspx" Width="116px" />
             </td>
         </tr>
         <tr>
             <td colspan="3">
                 <br />
-                <asp:GridView ID="grDetalles" runat="server" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal" Width="742px" AutoGenerateColumns="False">
+                <asp:GridView ID="grDetalles" runat="server" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal" Width="762px" AutoGenerateColumns="False" OnRowCommand="grDetalles_RowCommand">
                     <Columns>
                         <asp:ButtonField ButtonType="Image" CommandName="Eliminar" ImageUrl="~/Images/Borrar.png" Text="Eliminar" />
-                        <asp:BoundField HeaderText="Codigo Curso" />
-                        <asp:BoundField HeaderText="Nombre Curso" />
-                        <asp:BoundField HeaderText="Profesor" />
+                        <asp:BoundField HeaderText="Codigo Curso" DataField="idCursoProfesor" />
+                        <asp:BoundField HeaderText="Descripcion" DataField="descripcion" />
                     </Columns>
                     <FooterStyle BackColor="White" ForeColor="#333333" />
                     <HeaderStyle BackColor="#336666" Font-Bold="True" ForeColor="White" />
@@ -137,7 +148,9 @@
                 <asp:HyperLink ID="HyperLink1" runat="server">Menu</asp:HyperLink>
             </td>
             <td class="auto-style6"></td>
-            <td class="auto-style2"></td>
+            <td class="auto-style2">
+                <asp:Button ID="btnMatricular" runat="server" CssClass="auto-style11" OnClick="btnMatricular_Click" Text="Matricular" />
+            </td>
         </tr>
         <tr>
             <td class="auto-style3">&nbsp;</td>
@@ -187,7 +200,7 @@
               
                 <tr>
                     <td class="auto-style22">
-                        <asp:Button ID="btnGrabarDetalle" runat="server" OnClick="btnGrabarDetalle_Click" Text="Grabar" Width="100px" CssClass="boton2" />
+                        <asp:Button ID="btnGrabarDetalle" runat="server" Text="Grabar" Width="100px" CssClass="boton2" />
                     </td>
                     <td class="auto-style10">
                         <asp:Button ID="btnCancelarDetalle" runat="server" Text="Cancelar" Width="100px" CssClass="boton-new" />

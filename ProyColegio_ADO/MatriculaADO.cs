@@ -16,7 +16,7 @@ namespace ProyColegio_ADO
         SqlCommand cmd = new SqlCommand();
         SqlDataReader dtr;
 
-        public Int16 RegistrarMatricula(MatriculaBE objMatriculaBE)
+        public String RegistrarMatricula(MatriculaBE objMatriculaBE)
         {
             try
             {
@@ -27,20 +27,22 @@ namespace ProyColegio_ADO
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@vIdPeriodo", objMatriculaBE.idPeriodo);
                 cmd.Parameters.AddWithValue("@vIdAlumno", objMatriculaBE.idAlumno);
+                cmd.Parameters.AddWithValue("@vGrado", objMatriculaBE.grado);
                 cmd.Parameters.AddWithValue("@vUsu_registro", objMatriculaBE.UsuRegistro);
+                cmd.Parameters.AddWithValue("@vEstado", objMatriculaBE.Estado);
 
                 cmd.Parameters.Add(new SqlParameter("@vNumMatricula", SqlDbType.Int));
-                cmd.Parameters["@cNumMatricula"].Direction = ParameterDirection.Output;
+                cmd.Parameters["@vNumMatricula"].Direction = ParameterDirection.Output;
 
                 cmd.Parameters.Add(new SqlParameter("@detalles", SqlDbType.Structured));
                 cmd.Parameters["@detalles"].Value = objMatriculaBE.DetalleMatricula;
                 cnx.Open();
                 cmd.ExecuteNonQuery();
-                return (Int16)cmd.Parameters["@cNumMatricula"].Value;
+                return cmd.Parameters["@vNumMatricula"].Value.ToString();
             }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
+            catch (Exception ex) {
+                return "[ERROR] " + ex.Message;
+                //throw new Exception(ex.Message);
             }
             finally
             {

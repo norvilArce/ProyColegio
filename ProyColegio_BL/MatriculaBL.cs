@@ -12,7 +12,7 @@ namespace ProyColegio_BL
     {
         MatriculaADO objMatriculaADO = new MatriculaADO();
 
-        public Int16 RegistrarMatricula(MatriculaBE objMatriculaBE)
+        public String RegistrarMatricula(MatriculaBE objMatriculaBE)
         {
             return objMatriculaADO.RegistrarMatricula(objMatriculaBE);
         }

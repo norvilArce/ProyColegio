@@ -44,6 +44,7 @@
     <Compile Include="AlumnoBL.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="CursoBL.cs" />
+    <Compile Include="CursoProfesorBL.cs" />
     <Compile Include="MatriculaBL.cs" />
     <Compile Include="PadreBL.cs" />
     <Compile Include="PeriodoBL.cs" />
