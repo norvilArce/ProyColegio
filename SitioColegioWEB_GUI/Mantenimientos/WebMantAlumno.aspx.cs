@@ -13,5 +13,60 @@ namespace SitioColegioWEB_GUI.Mantenimientos
         {
 
         }
+
+        protected void btnNuevo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnFiltrar_Click(object sender, ImageClickEventArgs e)
+        {
+
+        }
+
+        protected void grvAlumnos_RowDataBound(object sender, GridViewRowEventArgs e)
+        {
+
+        }
+
+        protected void grvAlumnos_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+
+        }
+
+        protected void grvAlumnos_PageIndexChanging(object sender, GridViewPageEventArgs e)
+        {
+
+        }
+
+        protected void btnGrabar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnGrabar2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void cboDepartamento_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void cboProvincia_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void cboDepartamento2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void cboProvincia2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
