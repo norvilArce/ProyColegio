@@ -81,11 +81,16 @@
     <Content Include="CSS\owl.carousel.css" />
     <Content Include="CSS\style.css" />
     <Content Include="images\as.jpg" />
+    <Content Include="images\Borrar.png" />
+    <Content Include="images\Buscar.png" />
+    <Content Include="images\Editar.png" />
     <Content Include="images\edu.jpg" />
     <Content Include="images\menu.png" />
     <Content Include="images\pa.jpg" />
     <Content Include="Mantenimientos\Mantenimientos.aspx" />
     <Content Include="Mantenimientos\WebMantAlumno.aspx" />
+    <Content Include="Mantenimientos\WebMantCurso.aspx" />
+    <Content Include="Mantenimientos\WebMantProfesor.aspx" />
     <Content Include="MenuPrincipal.aspx" />
     <Content Include="Transacciones\RegistrarMatricula.aspx" />
     <Content Include="Web.config" />
@@ -145,6 +150,20 @@
     </Compile>
     <Compile Include="Mantenimientos\WebMantAlumno.aspx.designer.cs">
       <DependentUpon>WebMantAlumno.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\WebMantCurso.aspx.cs">
+      <DependentUpon>WebMantCurso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\WebMantCurso.aspx.designer.cs">
+      <DependentUpon>WebMantCurso.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\WebMantProfesor.aspx.cs">
+      <DependentUpon>WebMantProfesor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\WebMantProfesor.aspx.designer.cs">
+      <DependentUpon>WebMantProfesor.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Transacciones\RegistrarMatricula.aspx.cs">
