@@ -132,6 +132,15 @@ namespace SitioColegioWEB_GUI.Mantenimientos
         protected global::System.Web.UI.WebControls.TextBox txtTel;
 
         /// <summary>
+        /// Control TextBox1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+
+        /// <summary>
         /// Control txtDNI.
         /// </summary>
         /// <remarks>
@@ -141,15 +150,6 @@ namespace SitioColegioWEB_GUI.Mantenimientos
         protected global::System.Web.UI.WebControls.TextBox txtDNI;
 
         /// <summary>
-        /// Control cboPadre.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList cboPadre;
-
-        /// <summary>
         /// Control txtDir.
         /// </summary>
         /// <remarks>
@@ -157,6 +157,15 @@ namespace SitioColegioWEB_GUI.Mantenimientos
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtDir;
+
+        /// <summary>
+        /// Control DropDownList1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
 
         /// <summary>
         /// Control cboDepartamento.
@@ -303,6 +312,15 @@ namespace SitioColegioWEB_GUI.Mantenimientos
         protected global::System.Web.UI.WebControls.TextBox txtTel2;
 
         /// <summary>
+        /// Control TextBox2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+
+        /// <summary>
         /// Control txtDNI2.
         /// </summary>
         /// <remarks>
@@ -312,15 +330,6 @@ namespace SitioColegioWEB_GUI.Mantenimientos
         protected global::System.Web.UI.WebControls.TextBox txtDNI2;
 
         /// <summary>
-        /// Control cboPadre2.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList cboPadre2;
-
-        /// <summary>
         /// Control txtDir2.
         /// </summary>
         /// <remarks>
@@ -328,6 +337,15 @@ namespace SitioColegioWEB_GUI.Mantenimientos
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtDir2;
+
+        /// <summary>
+        /// Control cboCurso.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList cboCurso;
 
         /// <summary>
         /// Control cboDepartamento2.

@@ -4,13 +4,46 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+// Los using...
+using ProyColegio_BE;
+using ProyColegio_BL;
+using System.Data;
 
 namespace SitioColegioWEB_GUI.Mantenimientos
 {
     public partial class WebMantAlumno : System.Web.UI.Page
     {
+        // Declaramos las instancias ...
+        ProfesorBL objProfesorBL = new ProfesorBL();
+        ProfesorBE objProfesorBE = new ProfesorBE();
+        UbigeoBL objUbigeoBL = new UbigeoBL();
+        DataView dtv;
         protected void Page_Load(object sender, EventArgs e)
         {
+            try
+            {
+                if (Page.IsPostBack == false)
+                {
+                    //Creamos la vista en memoria y cargamos los datos
+                    dtv = new DataView(objProfesorBL.ListarProfesor());
+                    Session["Vista"] = dtv;
+                    CargarDatos("");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                lblMensaje.Text = ex.Message;
+                mpeMensaje.Show();
+            }
+        }
+
+        private void CargarDatos(String strFiltro)
+        {
+            dtv = (DataView)Session["Vista"];
+            dtv.RowFilter = "APELLNOMBRES like '%" + strFiltro + "%'";
+            grvAlumnos.DataSource = dtv;
+            grvAlumnos.DataBind();
 
         }
 
